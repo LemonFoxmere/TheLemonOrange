@@ -1,0 +1,47 @@
+h1{
+    margin:0;
+    color:#ffffff;
+    text-shadow:0 0 15px #a8a8a8a6;
+
+    font-weight: 400;
+    font-family: Poppins;
+
+    text-align: center;
+}
+
+p{
+    margin:0;
+    color:#1f1f1f;
+
+    font-weight: 400;
+    font-family: Poppins;
+
+    text-align: center;
+}
+
+/* tiny */
+@media screen and (min-width: 280px) {
+    #title-text {
+        font-size:1.8rem;
+        line-height:2.8rem;
+    }
+}
+
+/* medium */
+@media screen and (min-width: 650px) {
+    #title-text {
+        font-size:3rem;
+        line-height:4rem;
+    }
+}
+
+/* large */
+@media screen and (min-width: 1000px) {
+    #title-text {
+        font-size:5rem;
+        line-height:6rem;
+    }
+    p{
+        font-size:2rem;
+    }
+}
