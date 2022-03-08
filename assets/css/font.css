@@ -1,4 +1,4 @@
-h1{
+h1, h2{
     margin:0;
     color:#ffffff;
     text-shadow:0 0 15px #a8a8a8a6;
@@ -13,24 +13,48 @@ h1{
 
 p{
     margin:0;
-    color:#1f1f1f;
+    color:#636363;
 
     font-weight: 400;
     font-family: Poppins;
-
-    text-align: center;
 }
 
 /* tiny */
-@media screen and (min-width: 280px) {
+@media screen and (min-width: 0) {
+    .page1-h1, .page1-h2 {
+        text-shadow: none;
+        text-align:left;
+    }
     #title-text {
         font-size:1.8rem;
         line-height:2.8rem;
     }
 }
 
+/* tiny-medium */
+@media screen and (min-width: 600px) {
+    .page1-h1, .page1-h2 {
+        text-shadow: none;
+        text-align:left;
+    }
+    #title-text {
+        font-size:2.8rem;
+        line-height:2.8rem;
+    }
+}
+
 /* medium */
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 800px) {
+    .page1-h1 {
+        font-size:3rem;
+        line-height:4rem;
+        width:50rem;
+    }
+    .page1-h2{
+        font-size:2rem;
+        line-height:2.3rem;
+        width:50rem;
+    }
     #title-text {
         font-size:3rem;
         line-height:4rem;
@@ -38,10 +62,25 @@ p{
 }
 
 /* large */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
     #title-text {
         font-size:5rem;
         line-height:6rem;
+    }
+    .page1-h1 {
+        font-size:4rem;
+        line-height:5rem;
+        width:50rem;
+    }
+    .page1-h2{
+        font-size:3.3rem;
+        line-height:3.3rem;
+        width:50rem;
+    }
+    .page1-p{
+        font-size:1.3rem;
+        line-height:1.8rem;
+        width:50rem;
     }
     p{
         font-size:2rem;

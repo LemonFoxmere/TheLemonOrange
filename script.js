@@ -5,13 +5,13 @@ logo_reveal_tl_color.play()
 // text typing animation
 let options = {
     strings: [
-        "Hello, I am a web developer",
-        "Hello, I am an AI/ML researcher",
-        "Hello, I am a graphics designer",
-        "Hello, I am an animator",
-        "Hello, I am a digital artist",
-        "Hello, I am a cat lover",
-        "Hello, I am a high schooler",
+        "web developer",
+        "software engineer",
+        "AI/ML researcher",
+        "graphics designer",
+        "digital artist",
+        "animator",
+        "cat lover",
     ],
     smartBackspace: true,
     loop: true,
@@ -21,4 +21,4 @@ let options = {
     backSpeed: 30,
     showCursor: false,
 };
-// let typed = new Typed('#hello-i-am', options)
+let typed = new Typed('#hello-i-am', options)
