@@ -2,15 +2,6 @@ logo_reveal_tl.play()
 logo_reveal_tl_size.play()
 logo_reveal_tl_color.play()
 
-anime({
-    targets:"#title-text",
-    letterSpacing:["1rem", 0],
-    easing:"easeInOutQuint",
-    duration: 2500,
-    delay:100,
-    opacity:[0,1]
-})
-
 // text typing animation
 let options = {
     strings: [

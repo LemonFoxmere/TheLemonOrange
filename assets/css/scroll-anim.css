@@ -1,0 +1,36 @@
+.opacity-none{
+    opacity: 0;
+}
+
+/* tiny */
+@media screen and (min-width: 280px) {
+}
+
+/* medium */
+@media screen and (min-width: 650px) {
+    .app-bg-style{
+        transform: translate(-50%, -1rem) scale(0.7) perspective(75rem) rotateY(-30deg) rotateX(20deg);
+        width:32rem !important;
+        height:32rem !important;
+        border-radius: 7rem !important;    
+    }
+    .app-bg-shadow-style{
+        transform: translate(-45%, 1rem) scale(0.7) perspective(75rem) rotateY(-27deg) rotateX(17deg); 
+        width:32rem !important;
+        height:32rem !important;
+    }
+}
+
+/* large */
+@media screen and (min-width: 1000px) {
+    .app-bg-style{
+        width:37rem !important;
+        height:37rem !important;
+        border-radius: 9rem !important;
+    }
+    .app-bg-shadow-style{
+        width:37rem !important;
+        height:37rem !important;
+        border-radius: 9rem !important;
+    }
+}

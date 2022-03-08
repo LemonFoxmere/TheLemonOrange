@@ -1,5 +1,5 @@
 body{
-    background-color: #dedede;
+    background-color: #f2f2f2;
     margin:0;
 
     display: flex;
@@ -38,33 +38,65 @@ body{
     right:5rem;
 }
 
-#logo-bg{
+#logo-bg-container{
     /* width:25rem; height:25rem; */
     width:100vw; height:100vh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     position: fixed;
-    top:50%; left:50%;
-    transform: translate(-50%, -50%);
+    top:0; left:0;
 
-    background: #e0e0e0;
-    background: linear-gradient(270deg, #e0e0e0 0%, #e0e0e0 100%);
+    background-color: transparent;
+    
+    transition: all 1200ms cubic-bezier(0.295, 0.015, 0.040, 1.000);
+    -moz-transition: all 1200ms cubic-bezier(0.295, 0.015, 0.040, 1.000);
+}
+#logo-bg{
+    position:absolute;
+    width:100vw; height:100vh;
+    margin:0; padding:0;
+    display: flex; justify-content: center; align-items: center;
+    overflow: hidden;
+    
+    background: #f2f2f2 !important;
+    background: linear-gradient(45deg, #f2f2f2 0%, #e0e0e0 100%) !important;
+
+    z-index: 2;
+    transition: all 1200ms cubic-bezier(0.295, 0.015, 0.040, 1.000);
+    -moz-transition: all 1200ms cubic-bezier(0.295, 0.015, 0.040, 1.000);
+}
+#logo-bg-shadow{
+    position:absolute;
+    width:100vw; height:100vh;
+    
+    background: rgb(177,177,177);
+    background: linear-gradient(270deg, rgba(177,177,177,1) 0%, rgba(255,255,255,1) 100%);
+
+    filter:blur(35px);
+
+    transition: all 1200ms cubic-bezier(0.295, 0.015, 0.040, 1.000);
+    -moz-transition: all 1200ms cubic-bezier(0.295, 0.015, 0.040, 1.000);
 }
 
 /* tiny */
 @media screen and (min-width: 280px) {
-    #logo-container{width:30rem; height:30rem}
+    #logo-container{
+        width:30rem; height:30rem;
+        transition: all 230ms cubic-bezier(0.260, 0.050, 0.250, 1.000); /* custom */
+    }
 }
 
 /* medium */
 @media screen and (min-width: 650px) {
-    #logo-container{width:45rem; height:45rem}
+    #logo-container{
+        width:45rem; height:45rem;
+        transition: all 230ms cubic-bezier(0.260, 0.050, 0.250, 1.000); /* custom */
+    }
 }
 
 /* large */
 @media screen and (min-width: 1000px) {
-    #logo-container{width:60rem; height:60rem}
+    #logo-container{
+        width:50rem; height:50rem;
+        transition: all 230ms cubic-bezier(0.260, 0.050, 0.250, 1.000); /* custom */
+    }
 }
