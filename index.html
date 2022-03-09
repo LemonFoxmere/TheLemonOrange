@@ -29,11 +29,10 @@
 </head>
 <body>
     <!-- logo -->
-    <div id="logo-bg-container" style="z-index:2; display:flex; justify-content: center; align-items:center;">
+    <div id="logo-bg-container" style="z-index:0; display:flex; justify-content: center; align-items:center; width:100vw; height: 100vh; ">
         <div id="logo-bg">
-            <!-- shadows and box -->
-            <svg
-            id="logo-container"
+            <!-- shadows and box for icon 1 (main logo) -->
+            <svg id="logo-container" class="logo-3d"
             style="z-index: 1; position:absolute;"
             viewBox="0 0 135.46666 135.46667"
             xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -158,13 +157,37 @@
                     style="stroke:none;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;fill:url(#icon-grad-2);fill-opacity:1;" />
             </g>
             </svg>
-        </div>
+            <!-- social media for icon 1 (main logo) -->
+            <section class="3d-icon-1" style="display: flex; justify-content: center; z-index: 2; height:100%; align-items: flex-end; margin-bottom: 1rem;">
+                <a class="connection-btn unselectable" href="https://twitter.com/LemonOrangeTW" target="_blank">
+                    <img id="twitter-conn" class="connection-img" src="assets/img/twitter-connection.svg" alt="">
+                </a>
+                <a class="connection-btn unselectable" href="https://www.reddit.com/user/The747IsDead" target="_blank">
+                    <img id="reddit-conn" class="connection-img" src="assets/img/reddit-connection.svg" alt="">
+                </a>
+                <a class="connection-btn unselectable" href="https://www.youtube.com/channel/UCut2xeBl7HcPEPatqpEUoQw" target="_blank">
+                    <img id="youtube-conn" class="connection-img" src="assets/img/youtube-connection.svg" alt="">
+                </a>
+                <a class="connection-btn unselectable" href="https://github.com/LemonOrangeWasTaken" target="_blank">
+                    <img id="github-conn" class="connection-img" src="assets/img/github-connection.svg" alt="">
+                </a>
+                <a class="connection-btn unselectable" href="" target="_blank">
+                    <img id="launch-conn" class="connection-img noheight" src="assets/img/launch-connection.svg" alt="">
+                </a>
+            </section>
 
+            <img id="deepfusion-icon" src="assets/img/deepfusion_icon.svg" class="logo-3d logo-icon-hidden" alt="deepfusion">
+
+            <!-- left and right arrow -->
+            <img id="logo-trans-left" class="logo-bg-arrows disable-hidden unselectable" src="assets/img/button-left.svg" style="position: absolute; z-index: 2; left:1.5rem" alt="">
+            <img id="logo-trans-right" class="logo-bg-arrows disable-hidden unselectable" src="assets/img/button-right.svg" style="position: absolute; z-index: 2; right:1.5rem" alt="">
+        </div>
+        
         <div id="logo-bg-shadow"></div>
     </div>
 
     <section id="title-container" style="position: absolute; left:0; top:0; width:100vw; z-index:3; display: flex; justify-content: center;
-    align-items: center; flex-direction: column; height:100vh; margin:0">
+    align-items: center; flex-direction: column; height:100vh; margin:0; pointer-events: none;">
         <h1 id="title-text" style="font-weight:400; margin:0; transition: all 700ms cubic-bezier(0.295, 0.015, 0.040, 1.000);"
         class="unselectable">TheLemonOrange.com</h1>
             <a class="trigger" id="trig-1" style="top:50%;">Trigger 1 -----</a>
@@ -175,26 +198,47 @@
         <!-- main triggers -->
         <a class="trigger" id="trig-alpha" style="color:red; top:10%; position:fixed; right:0">      ------- Delta</a>
         <a class="trigger" id="trig-beta" style="color:green; top:30%; position:fixed; right:0">     -------- Beta</a>
+        <a class="trigger" id="trig-epsilon" style="color:darkcyan; top:20%; position:fixed; right:0">   ----- Epsilon</a>
         <a class="trigger" id="trig-delta" style="color:blue; top:50%; position:fixed; right:0">     ------- Alpha</a>
         <a class="trigger" id="trig-omicron" style="color:purple; top:75%; position:fixed; right:0"> ----- Omicron</a>
     </div>
 
-    <section id="page1" style="transition: all 300ms cubic-bezier(0.295, 0.015, 0.040, 1.000); z-index: 1;
-            position:relative; width:30vw; margin-left:30vw; display:flex; flex-direction:column;">
+    <!-- about page -->
+    <section id="page1" style="transition: all 300ms cubic-bezier(0.295, 0.015, 0.040, 1.000); z-index: 2;
+            position:relative; width:32vw; margin-left:30vw; display:flex; flex-direction:column;">
         <section style="width:fit-content; height:fit-content">
             <h1 class="page1-h1" style="color:#333; font-weight: 600;">Hello! 👋 I am a</h1>
             <section style="width:fit-content; height: fit-content; display:flex; direction:row">
-                <h2 class="page1-h2" id="hello-i-am" style="color:#666; z-index: 1;"></h2>
-                <h2 class="page1-h2">​</h2>
+                <h2 class="page1-h2" id="hello-i-am" style="color:#666; z-index: 1; width: fit-content; margin-right:6px"></h2>
             </section>
         </section>
-        <hr style="width:13rem; margin: 2rem 0 1.5rem 0; opacity: 0.4;">
-        <p class="page1-p" style="width:25rem">
-            I'm a web and AI developer based in California. And I make projects in regards to these two things.
+        <hr style="width:13rem; margin: 1.5rem 0 1rem 0; opacity: 0.4;">
+        <p class="page1-p" style="width:100%">
+            Hello there! I'm a web and AI developer based in California, and I mainly make projects in regards to these two things.
         </p>
-        <p class="page1-p" style="width:25rem; margin-top:0.5rem">
-            I'm a web and AI developer based in California. And I make projects in regards to these two things.
+        <p class="page1-p" style="width:100%; margin-top:0.5rem">
+            My tools mainly consist of VanillaJS, Python, TensorFlow and PyTorch, but I also know a bit of React and Vue so I don't get cancelled.
         </p>
+        <p class="page1-p" style="width:100%; margin-top:0.5rem">
+            I also like kitties and travelling.
+        </p>
+
+        <a class="trigger" id="trig-2" style="bottom:0%; right:-12rem">Trigger 2 -----</a>
+    </section>
+
+    <!-- project page -->
+    <section class="disable-hidden" id="page2" style="transition: all 300ms cubic-bezier(0.295, 0.015, 0.040, 1.000); z-index: 2;
+        position:relative; width:32vw; margin-left:30vw; margin-top:50vh; display:flex; flex-direction:column;">
+        <section style="width:fit-content; height:fit-content">
+            <h1 id="project-title" class="page1-h1 notransition" style="color:#333; font-weight: 600;">My Projects 🥡</h1>
+        </section>
+        <hr style="width:13rem; margin: 1.5rem 0 1rem 0; opacity: 0.4;">
+        <p class="page1-p notransition" id="project-description" style="width:100%">
+            The app icon on the left is interactive! You can browse through my featured projects on there if you like, and the 
+            description for each one will pop up here.
+        </p>
+
+        <a class="trigger" id="trig-3" style="bottom:0%; right:-12rem">Trigger 3 -----</a>
     </section>
 
     <div style="width:100vw; height:100vh; margin:0">
@@ -208,6 +252,7 @@
     <script src="assets/timelines/logo-reveal.js"></script>
     <script src="assets/handlers/trigger.js"></script>
     <script src="assets/handlers/compatibility.js"></script>
+    <script src="assets/handlers/app-carousel.js"></script>
 
     <script src="script.js"></script>
 </body>

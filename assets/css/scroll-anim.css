@@ -9,31 +9,31 @@
 /* medium */
 @media screen and (min-width: 800px) {
     .app-bg-style{
-        transform: perspective(75rem) rotateY(-20deg) rotateX(10deg) scale(0.8) translateX(-25rem) !important;
-        -moz-transform: perspective(75rem) rotateY(-20deg) rotateX(10deg) scale(0.8) translateX(-25rem) !important;
-        -webkit-transform: perspective(75rem) rotateY(-20deg) rotateX(10deg) scale(0.8) translateX(-25rem) !important;
+        transform: perspective(75rem) rotateY(-20deg) rotateX(10deg) scale(0.8) translateX(-22rem) !important;
+        -moz-transform: perspective(75rem) rotateY(-20deg) rotateX(10deg) scale(0.8) translateX(-22rem) !important;
+        -webkit-transform: perspective(75rem) rotateY(-20deg) rotateX(10deg) scale(0.8) translateX(-22rem) !important;
         
         border-radius: 7rem !important;    
         width:32rem !important;
         height:32rem !important;
+
+        animation: 5s ease-in-out infinite alternate upanddown
     }
     .app-bg-shadow-style{
-        transform: perspective(75rem) rotateY(-20deg) rotateX(10deg) scale(0.83) translateX(-20rem) translateY(2rem) !important;
-        -moz-transform: perspective(75rem) rotateY(-20deg) rotateX(10deg) scale(0.83) translateX(-20rem) translateY(2rem) !important;
-        -webkit-transform: perspective(75rem) rotateY(-20deg) rotateX(10deg) scale(0.83) translateX(-20rem) translateY(2rem) !important;
-
-        width:32rem !important;
-        height:32rem !important;
-        border-radius: 9rem !important;
+        opacity: 1 !important;
+        margin-left:2rem;
+        scale: 0.7;
+        width:35rem !important;
+        height:35rem !important;
     }
 }
 
 /* large */
 @media screen and (min-width: 1200px) {
     .app-bg-style{
-        transform: perspective(75rem) rotateY(-20deg) rotateX(10deg) scale(0.9) translateX(-35rem) !important;
-        -moz-transform: perspective(75rem) rotateY(-20deg) rotateX(10deg) scale(0.9) translateX(-35rem) !important;
-        -webkit-transform: perspective(75rem) rotateY(-20deg) rotateX(10deg) scale(0.9) translateX(-35rem) !important;
+        transform: perspective(75rem) rotateY(-20deg) rotateX(10deg) scale(0.9) translateX(-27rem) !important;
+        -moz-transform: perspective(75rem) rotateY(-20deg) rotateX(10deg) scale(0.9) translateX(-27rem) !important;
+        -webkit-transform: perspective(75rem) rotateY(-20deg) rotateX(10deg) scale(0.9) translateX(-27rem) !important;
 
         border-radius: 8rem !important;    
         width:37rem !important;
@@ -42,11 +42,9 @@
         animation: 5s ease-in-out infinite alternate upanddown
     }
     .app-bg-shadow-style{
-        transform: perspective(75rem) rotateY(-20deg) rotateX(10deg) scale(0.9) translateX(-30rem) translateY(2rem) !important;
-        -moz-transform: perspective(75rem) rotateY(-20deg) rotateX(10deg) scale(0.9) translateX(-30rem) translateY(2rem) !important;
-        -webkit-transform: perspective(75rem) rotateY(-20deg) rotateX(10deg) scale(0.9) translateX(-30rem) translateY(2rem) !important;
-
-        border-radius: 10rem !important;    
+        opacity: 1 !important;
+        margin-left:1rem;
+        scale: 1;
         width:37rem !important;
         height:37rem !important;
     }

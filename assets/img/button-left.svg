@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64.303818"
+   height="147.99998"
+   viewBox="0 0 17.013718 39.158331"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c4e8f9e, 2021-05-24)"
+   sodipodi:docname="button-left.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     width="128px"
+     inkscape:snap-page="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="4.2648337"
+     inkscape:cx="14.537495"
+     inkscape:cy="71.984049"
+     inkscape:window-width="1440"
+     inkscape:window-height="790"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="-2.5654471,19.579164"
+       orientation="0,-1"
+       id="guide1177" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-19.498779,2.6458333)">
+    <path
+       style="color:#000000;fill:#272727;fill-opacity:1;stroke-width:0.868739;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none"
+       d="m 32.68552,-0.03907601 a 2.2985409,2.2985409 0 0 0 -1.477875,0.9535771 L 21.023713,15.62538 a 2.2987707,2.2987707 0 0 0 0,2.616398 l 10.183932,14.71088 a 2.2985409,2.2985409 0 0 0 3.198386,0.581987 2.2985409,2.2985409 0 0 0 0.581988,-3.198386 L 25.710154,16.93358 34.988019,3.5308998 A 2.2985409,2.2985409 0 0 0 34.406031,0.33251357 2.2985409,2.2985409 0 0 0 32.68552,-0.03907601 Z"
+       id="path958" />
+  </g>
+</svg>

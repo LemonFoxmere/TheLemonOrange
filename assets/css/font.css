@@ -29,6 +29,15 @@ p{
         font-size:1.8rem;
         line-height:2.8rem;
     }
+
+    .typed-cursor{
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
 }
 
 /* tiny-medium */
@@ -59,6 +68,13 @@ p{
         font-size:3rem;
         line-height:4rem;
     }
+
+    .typed-cursor{
+        transform: translateY(-0.3rem);
+        font-size: 2rem;
+        font-weight: 600;
+        color:#f1860b;
+    } 
 }
 
 /* large */
@@ -85,4 +101,8 @@ p{
     p{
         font-size:2rem;
     }
+
+    .typed-cursor{
+        font-size: 3rem;
+    }    
 }

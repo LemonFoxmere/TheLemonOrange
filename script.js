@@ -8,7 +8,7 @@ let options = {
         "web developer",
         "software engineer",
         "AI/ML researcher",
-        "graphics designer",
+        "UI designer",
         "digital artist",
         "animator",
         "cat lover",
@@ -17,8 +17,9 @@ let options = {
     loop: true,
     loopCount: Infinity,
     backDelay: 3300,
-    typeSpeed: 30,
-    backSpeed: 30,
-    showCursor: false,
+    typeSpeed: 65,
+    backSpeed: 65,
+    showCursor: true,
+    cursorChar: '_',
 };
 let typed = new Typed('#hello-i-am', options)
