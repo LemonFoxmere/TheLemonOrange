@@ -45,7 +45,7 @@ body{
     z-index: 9999 !important;
     right:5rem;
     
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 .disable-hidden{
