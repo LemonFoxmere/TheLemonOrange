@@ -96,12 +96,14 @@ p{
 
     /* ========= contact mode ========= */
     
-    #page-contact-title{
-        width: 100%;
-        justify-content: center;
-    }
     #contact-title{
-        display: none;
+        position: absolute;
+        text-shadow: none;
+        font-size: 2.5rem;
+        color:#636363;
+        top:53%;
+    }#contact-title:after{
+        content: " Me";
     }
     .contact-label{
         font-family: Poppins, Helvetica, sans-serif, Arial;
@@ -171,6 +173,7 @@ p{
     /* ========= contact mode ========= */
 
     #page-contact-title{
+        display: flex !important;
         width: fit-content;
         justify-content: flex-start;
     }
@@ -181,6 +184,8 @@ p{
         color:#636363;
         top:1.6rem;
         transform: translateX(2.7rem);
+    }#contact-title:after{
+        content: none;
     }
     .contact-label{
         font-family: Poppins, Helvetica, sans-serif, Arial;

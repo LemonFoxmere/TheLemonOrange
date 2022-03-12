@@ -45,7 +45,7 @@ body{
     z-index: 9999 !important;
     right:5rem;
     
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .disable-hidden{
@@ -69,6 +69,8 @@ body{
     perspective: 75rem;
     -moz-perspective: 75rem;
     -webkit-perspective: 75rem;
+
+    transition: all 700ms cubic-bezier(0.295, 0.015, 0.040, 1.000)
 }
 #logo-bg{
     width:100vw; height:100vh;
@@ -180,7 +182,7 @@ body{
     #page2{
         margin-top:50vh
     }#page3{
-        margin-top:80vh;
+        margin-top:70vh;
     }
 
     .logo-bg-arrows{
@@ -193,9 +195,9 @@ body{
     #trig-3{
         top:25vh;
     }#trig-4{
-        top: -4rem;
+        top: 0rem;
     }#trig-delta{
-        top:-20% !important
+        top:-10% !important
     }
 
     #carousel-indicator-container{
