@@ -180,4 +180,4 @@ window.setInterval(() => {
         // reset connection buttons if screen width is big enough again
         if(!is_mobile()){document.querySelectorAll(".connection-btn").forEach(e => e.classList.remove("disable-hidden"))}
         else{document.querySelectorAll(".connection-btn").forEach(e => e.classList.add("disable-hidden"))}
-}, 10)
+}, 1)
