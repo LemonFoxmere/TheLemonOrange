@@ -130,9 +130,11 @@ window.onscroll = () => {
     })
 
     passed_trigger("trig-4", "trig-alpha", ()=>{ // trigger 3 which transitions the page to a contact form
+        if(trig4_passed == false && trig4_1_passed_prev == false){
+            document.getElementById("logo-bg-container").style.position = "absolute"
+        }
         trig4_passed = true
         if(trig4_passed_prev == false && trig4_passed == true){ // prevent repeated execution
-            document.getElementById("logo-bg-container").style.position = "absolute"
             document.getElementById("logo-bg-container").style.top = `${(
                 document.getElementById("trig-4").getBoundingClientRect().top - document.getElementById("trig-alpha").getBoundingClientRect().top) + window.scrollY}px`
         }
@@ -149,6 +151,9 @@ window.onscroll = () => {
     passed_trigger("trig-4", "trig-delta", ()=>{ // trigger 3 which transitions the page to a contact form
         trig4_1_passed = true
         if(trig4_1_passed_prev == false && trig4_1_passed == true){ // prevent repeated execution
+            document.getElementById("logo-bg-container").style.top = `${(
+                document.getElementById("trig-4").getBoundingClientRect().top - document.getElementById("trig-alpha").getBoundingClientRect().top) + window.scrollY}px`
+
             document.getElementById("logo-bg-container").classList.add("disable-hidden")
             document.getElementById("page3").classList.add("disable-hidden")
             document.getElementById("end-screen").classList.remove("disable-hidden")
@@ -157,6 +162,9 @@ window.onscroll = () => {
     }, () => {
         trig4_1_passed = false
         if(trig4_1_passed_prev == true && trig4_1_passed == false){ // prevent repeated execution
+            document.getElementById("logo-bg-container").style.top = `${(
+                document.getElementById("trig-4").getBoundingClientRect().top - document.getElementById("trig-alpha").getBoundingClientRect().top) + window.scrollY}px`
+                
             document.getElementById("logo-bg-container").classList.remove("disable-hidden")
             document.getElementById("page3").classList.remove("disable-hidden")
             document.getElementById("end-screen").classList.add("disable-hidden")
@@ -167,7 +175,7 @@ window.onscroll = () => {
 
 window.onresize = () => {
     if(trig4_passed){
-        document.getElementById("logo-bg-container").style.top = `${(
+        document.getElementById("logo-bg-container").style.top = `${Math.abs(
             document.getElementById("trig-4").getBoundingClientRect().top - document.getElementById("trig-alpha").getBoundingClientRect().top) + window.scrollY}px`
     }
 }
