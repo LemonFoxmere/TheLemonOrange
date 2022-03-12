@@ -164,20 +164,13 @@ window.onscroll = () => {
         if(trig4_1_passed_prev == true && trig4_1_passed == false){ // prevent repeated execution
             document.getElementById("logo-bg-container").style.top = `${(
                 document.getElementById("trig-4").getBoundingClientRect().top - document.getElementById("trig-alpha").getBoundingClientRect().top) + window.scrollY}px`
-                
+
             document.getElementById("logo-bg-container").classList.remove("disable-hidden")
             document.getElementById("page3").classList.remove("disable-hidden")
             document.getElementById("end-screen").classList.add("disable-hidden")
         }
         trig4_1_passed_prev = false
     })
-}
-
-window.onresize = () => {
-    if(trig4_passed){
-        document.getElementById("logo-bg-container").style.top = `${Math.abs(
-            document.getElementById("trig-4").getBoundingClientRect().top - document.getElementById("trig-alpha").getBoundingClientRect().top) + window.scrollY}px`
-    }
 }
 
 window.setInterval(() => {
