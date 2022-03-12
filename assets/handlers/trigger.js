@@ -138,6 +138,8 @@ window.onscroll = () => {
             document.getElementById("logo-bg-container").style.top = `${(
                 document.getElementById("trig-4").getBoundingClientRect().top - document.getElementById("trig-alpha").getBoundingClientRect().top) + window.scrollY}px`
         }
+        document.getElementById("logo-bg-container").style.top = `${(
+            document.getElementById("trig-4").getBoundingClientRect().top - document.getElementById("trig-alpha").getBoundingClientRect().top) + window.scrollY}px`
         trig4_passed_prev = true
     }, () => {
         trig4_passed = false
