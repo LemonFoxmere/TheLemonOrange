@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Vectornator for iOS (http://vectornator.io/) -->
+
+<svg
+   height="100%"
+   style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;"
+   xml:space="preserve"
+   width="100%"
+   version="1.1"
+   viewBox="0 0 113.647 115.272"
+   id="svg890"
+   sodipodi:docname="aivis_icon.svg"
+   inkscape:version="1.1 (c4e8f9e, 2021-05-24)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:vectornator="http://vectornator.io"><sodipodi:namedview
+   id="namedview892"
+   pagecolor="#505050"
+   bordercolor="#ffffff"
+   borderopacity="1"
+   inkscape:pageshadow="0"
+   inkscape:pageopacity="0"
+   inkscape:pagecheckerboard="1"
+   showgrid="false"
+   inkscape:zoom="6.3636657"
+   inkscape:cx="50.599767"
+   inkscape:cy="62.62114"
+   inkscape:window-width="1440"
+   inkscape:window-height="791"
+   inkscape:window-x="0"
+   inkscape:window-y="25"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="svg890"
+   inkscape:snap-page="true"
+   inkscape:snap-global="false" />
+<metadata
+   id="metadata875">
+<vectornator:setting
+   key="DimensionsVisible"
+   value="1" />
+<vectornator:setting
+   key="PencilOnly"
+   value="0" />
+<vectornator:setting
+   key="SnapToPoints"
+   value="1" />
+<vectornator:setting
+   key="GuidesVisible"
+   value="1" />
+<vectornator:setting
+   key="CMYKEnabledKey"
+   value="0" />
+<vectornator:setting
+   key="RulersVisible"
+   value="1" />
+<vectornator:setting
+   key="SnapToEdges"
+   value="1" />
+<vectornator:setting
+   key="OutlineMode"
+   value="0" />
+<vectornator:setting
+   key="DisplayWhiteBackground"
+   value="0" />
+<vectornator:setting
+   key="doHistoryDisabled"
+   value="0" />
+<vectornator:setting
+   key="SnapToGuides"
+   value="1" />
+<vectornator:setting
+   key="TimeLapseWatermarkDisabled"
+   value="0" />
+<vectornator:setting
+   key="Units"
+   value="Points" />
+<vectornator:setting
+   key="SnapToGrid"
+   value="0" />
+<vectornator:setting
+   key="IsolateActiveLayer"
+   value="0" />
+<vectornator:setting
+   key="DynamicGuides"
+   value="1" />
+</metadata>
+<defs
+   id="defs877">
+
+
+
+
+
+<linearGradient
+   inkscape:collect="always"
+   id="linearGradient827"><stop
+     style="stop-color:#ff00f2;stop-opacity:1"
+     offset="0"
+     id="stop823" /><stop
+     style="stop-color:#ff7900;stop-opacity:1"
+     offset="1"
+     id="stop825" /></linearGradient><linearGradient
+   inkscape:collect="always"
+   xlink:href="#linearGradient827"
+   id="linearGradient829"
+   x1="95.084503"
+   y1="489.0242"
+   x2="246.73827"
+   y2="428.04172"
+   gradientUnits="userSpaceOnUse" /><linearGradient
+   id="linearGradient842"
+   inkscape:collect="always"><stop
+     id="stop838"
+     offset="0"
+     style="stop-color:#ff7400;stop-opacity:1" /><stop
+     id="stop840"
+     offset="1"
+     style="stop-color:#d400ff;stop-opacity:1" /></linearGradient><linearGradient
+   inkscape:collect="always"
+   id="linearGradient832"><stop
+     style="stop-color:#000000;stop-opacity:1;"
+     offset="0"
+     id="stop828" /><stop
+     style="stop-color:#000000;stop-opacity:0;"
+     offset="1"
+     id="stop830" /></linearGradient><linearGradient
+   inkscape:collect="always"
+   xlink:href="#linearGradient832"
+   id="linearGradient834"
+   x1="40"
+   y1="275.83743"
+   x2="336.80002"
+   y2="275.83743"
+   gradientUnits="userSpaceOnUse" /><linearGradient
+   inkscape:collect="always"
+   xlink:href="#linearGradient842"
+   id="linearGradient836"
+   gradientUnits="userSpaceOnUse"
+   x1="92.400009"
+   y1="331.83743"
+   x2="332.40002"
+   y2="147.83742"
+   gradientTransform="translate(-0.07684606,4.3870695)" /><linearGradient
+   inkscape:collect="always"
+   xlink:href="#linearGradient832"
+   id="linearGradient2301"
+   gradientUnits="userSpaceOnUse"
+   x1="40"
+   y1="275.83743"
+   x2="336.80002"
+   y2="275.83743" /><filter
+   inkscape:collect="always"
+   style="color-interpolation-filters:sRGB"
+   id="filter2395"
+   x="-0.11831059"
+   y="-0.12558827"
+   width="1.2366212"
+   height="1.2511765"><feGaussianBlur
+     inkscape:collect="always"
+     stdDeviation="3.0224536"
+     id="feGaussianBlur2397" /></filter></defs>
+
+<g
+   id="g2393"
+   transform="matrix(0.6408038,0,0,0.6408038,37.17894,39.129813)"
+   style="filter:url(#filter2395);opacity:0.65762712"><g
+     id="g2383"
+     inkscape:label="bg"
+     transform="translate(-138.67721,-183.45367)" /><g
+     inkscape:label="Logo"
+     id="g2391"
+     transform="translate(-138.67721,-183.45367)"><g
+       aria-label="A"
+       transform="matrix(0.20657713,0,0,0.20657713,130.4142,155.35161)"
+       style="font-style:normal;font-weight:normal;font-size:400px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient834);fill-opacity:1;stroke:none"
+       id="g2389"><g
+         style="fill:url(#linearGradient2301)"
+         id="g2387"
+         transform="translate(0.07684594,-4.3870442)"><path
+           inkscape:connector-curvature="0"
+           id="path2385"
+           d="M 163.12394,140.42371 39.922773,420.02526 h 50.40039 L 118.32316,356.4237 h 89.23438 l -19.20118,-43.59961 h -50.83398 l 50.80078,-115.19922 50.80078,115.19922 19.19922,43.59961 28,63.60156 h 50.40039 L 213.52238,140.42371 Z"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:400px;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:url(#linearGradient836);fill-opacity:1" /></g></g></g></g><g
+   id="g2299"
+   transform="matrix(0.6408038,0,0,0.6408038,37.17894,39.129813)"><g
+     id="layer2"
+     inkscape:label="bg"
+     transform="translate(-138.67721,-183.45367)" /><g
+     inkscape:label="Logo"
+     id="layer1"
+     transform="translate(-138.67721,-183.45367)"><g
+       aria-label="A"
+       transform="matrix(0.20657713,0,0,0.20657713,130.4142,155.35161)"
+       style="font-style:normal;font-weight:normal;font-size:400px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient834);fill-opacity:1;stroke:none"
+       id="flowRoot817"><g
+         style="fill:url(#linearGradient2301)"
+         id="g11283"
+         transform="translate(0.07684594,-4.3870442)"><path
+           inkscape:connector-curvature="0"
+           id="path825"
+           d="M 163.12394,140.42371 39.922773,420.02526 h 50.40039 L 118.32316,356.4237 h 89.23438 l -19.20118,-43.59961 h -50.83398 l 50.80078,-115.19922 50.80078,115.19922 19.19922,43.59961 28,63.60156 h 50.40039 L 213.52238,140.42371 Z"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:400px;font-family:Montserrat;-inkscape-font-specification:Montserrat;fill:url(#linearGradient836);fill-opacity:1" /></g></g></g></g></svg>

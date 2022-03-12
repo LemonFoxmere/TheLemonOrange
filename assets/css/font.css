@@ -4,7 +4,7 @@ h1, h2{
     text-shadow:0 0 15px #a8a8a8a6;
 
     font-weight: 400;
-    font-family: Poppins;
+    font-family: Poppins, Helvetica, sans-serif, Arial;
 
     text-align: center;
 
@@ -16,19 +16,65 @@ p{
     color:#636363;
 
     font-weight: 400;
-    font-family: Poppins;
+    font-family: Poppins, Helvetica, sans-serif, Arial;
 }
 
 /* tiny */
 @media screen and (min-width: 0) {
-    .page1-h1, .page1-h2 {
+    #type-text-container{
+        width: 90vw; height:2rem; margin-bottom: 3rem;
+        justify-content: center;
+    }
+
+    .page1-h1{
         text-shadow: none;
-        text-align:left;
+        text-align:center;
+        width: 90vw;
+        font-size:2.5rem;
+        line-height:2.5rem;
+    }#end-screen-h1{
+        width: fit-content;
+
+        text-align:center;
+        text-shadow: none;
+        font-size: 2rem;
+        color: #636363;
+    }.page1-h2{
+        text-align:center;
+        font-size:2rem;
+        text-align: left;
+        color: #525252;
+    }.page1-p{
+        width: 100%;
+        text-align: center;
+        color: #3d3d3d !important;
+        font-size: 1.3rem;
+        margin-left: auto !important; margin-right: auto !important;
     }
+
+    .infos{
+        position: fixed;
+        width: 90vw;
+        top:69vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }.infos-far{
+        margin-top:10vh
+    }#project-maintain{
+        display: none;
+    }
+
+    .typed-cursor{
+        font-size: 2rem;
+        font-weight: 600;
+        color:#f1860b;
+    } 
+
     #title-text {
-        font-size:1.8rem;
+        font-size:2.8rem;
         line-height:2.8rem;
-    }
+    } #title-text::before{content: "LemonOrange" !important;}
 
     .typed-cursor{
         -webkit-touch-callout: none;
@@ -37,48 +83,118 @@ p{
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-    }
-}
 
-/* tiny-medium */
-@media screen and (min-width: 600px) {
-    .page1-h1, .page1-h2 {
-        text-shadow: none;
-        text-align:left;
+        font-size:2rem;
     }
-    #title-text {
-        font-size:2.8rem;
-        line-height:2.8rem;
+
+    #copyright{
+        position: absolute;
+        bottom:0.5rem;
+        font-size: 0.8rem;
+        opacity: 0.5;
+    }
+
+    /* ========= contact mode ========= */
+    
+    #page-contact-title{
+        width: 100%;
+        justify-content: center;
+    }
+    #contact-title{
+        display: none;
+    }
+    .contact-label{
+        font-family: Poppins, Helvetica, sans-serif, Arial;
+        font-size: 1rem;
+        margin-top: 0.3rem;
+    }
+
+    .no-mobile-view{
+        display: none !important;
     }
 }
 
 /* medium */
-@media screen and (min-width: 800px) {
-    .page1-h1 {
-        font-size:3rem;
-        line-height:4rem;
-        width:50rem;
+@media screen and (min-width: 900px) {
+    #type-text-container{
+        width:fit-content; height:2.7rem; margin-bottom: 0.5rem;
+        justify-content: center;
     }
-    .page1-h2{
-        font-size:2rem;
-        line-height:2.3rem;
-        width:50rem;
-    }
-    #title-text {
+
+    .page1-h1{
+        width: fit-content;
+        text-align: left;
         font-size:3rem;
-        line-height:4rem;
+        line-height:3rem;
+    }#end-screen-h1{
+        width: fit-content;
+
+        text-align:left;
+        text-shadow: none;
+        font-size: 2rem;
+        color: #636363;
+    }.page1-h2{
+        color:#666;
+        font-size:2.7rem;
+    }.page1-p{
+        text-align: left;
+        color: #595959 !important;
+        font-size: 1.3rem;
+        margin-left: 0; margin-right: 0;
+    }
+
+    .infos{
+        position: relative;
+        width: 100%;
+        top:inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }.infos-far{
+        margin:0
+    }#project-maintain{
+        display: contents;
     }
 
     .typed-cursor{
         transform: translateY(-0.3rem);
-        font-size: 2rem;
+        font-size: 2.7rem;
         font-weight: 600;
         color:#f1860b;
     } 
+
+    #title-text {
+        font-size:3rem;
+        line-height:4rem;
+    } #title-text::before{content: "TheLemonOrange.com" !important;}
+
+    /* ========= contact mode ========= */
+
+    #page-contact-title{
+        width: fit-content;
+        justify-content: flex-start;
+    }
+    #contact-title{
+        position: absolute;
+        text-shadow: none;
+        font-size: 2.5rem;
+        color:#636363;
+        top:1.6rem;
+        transform: translateX(2.7rem);
+    }
+    .contact-label{
+        font-family: Poppins, Helvetica, sans-serif, Arial;
+        font-size: 1rem;
+        margin-top: 0.3rem;
+    }
+    
+    .no-mobile-view{
+        display: inline !important;
+    }
 }
 
 /* large */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
     #title-text {
         font-size:5rem;
         line-height:6rem;
@@ -87,22 +203,39 @@ p{
         font-size:4rem;
         line-height:5rem;
         width:50rem;
-    }
-    .page1-h2{
+    }.page1-h2{
         font-size:3.3rem;
         line-height:3.3rem;
+    }.page1-p2{
+        font-size:1.1rem;
+        line-height:1.6rem;
         width:50rem;
-    }
-    .page1-p{
+    }.page1-p{
         font-size:1.3rem;
         line-height:1.8rem;
-        width:50rem;
     }
+
     p{
         font-size:2rem;
     }
 
     .typed-cursor{
         font-size: 3rem;
-    }    
+    }
+
+    /* ========= contact mode ========= */
+
+    #contact-title{
+        position: absolute;
+        text-shadow: none;
+        font-size: 3rem;
+        color:#636363;
+        top:2.7rem;
+        transform: translateX(3.25rem);
+    }
+    .contact-label{
+        font-family: Poppins, Helvetica, sans-serif, Arial;
+        font-size: 1.2rem;
+        margin-top: 0.4rem;
+    }
 }

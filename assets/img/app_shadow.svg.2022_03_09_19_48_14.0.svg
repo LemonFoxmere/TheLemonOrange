@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Vectornator for iOS (http://vectornator.io/) -->
+
+<svg
+   height="100%"
+   style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;"
+   xml:space="preserve"
+   width="100%"
+   version="1.1"
+   viewBox="0 0 113.647 115.272"
+   id="svg890"
+   sodipodi:docname="app_shadow.svg"
+   inkscape:version="1.1 (c4e8f9e, 2021-05-24)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:vectornator="http://vectornator.io"><sodipodi:namedview
+   id="namedview892"
+   pagecolor="#505050"
+   bordercolor="#ffffff"
+   borderopacity="1"
+   inkscape:pageshadow="0"
+   inkscape:pageopacity="0"
+   inkscape:pagecheckerboard="1"
+   showgrid="true"
+   inkscape:zoom="3.0073528"
+   inkscape:cx="68.166262"
+   inkscape:cy="62.679709"
+   inkscape:window-width="1440"
+   inkscape:window-height="791"
+   inkscape:window-x="0"
+   inkscape:window-y="25"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="g7967"
+   inkscape:snap-page="true"
+   inkscape:snap-global="true"
+   inkscape:snap-bbox="true"
+   inkscape:bbox-paths="true"
+   inkscape:bbox-nodes="true"
+   inkscape:snap-bbox-edge-midpoints="true"
+   inkscape:snap-bbox-midpoints="true"><inkscape:grid
+     type="axonomgrid"
+     id="grid6870"
+     color="#ffffff"
+     opacity="0.1254902"
+     empcolor="#ffffff"
+     empopacity="0.25098039"
+     enabled="false" /></sodipodi:namedview>
+<metadata
+   id="metadata875">
+<vectornator:setting
+   key="DimensionsVisible"
+   value="1" />
+<vectornator:setting
+   key="PencilOnly"
+   value="0" />
+<vectornator:setting
+   key="SnapToPoints"
+   value="1" />
+<vectornator:setting
+   key="GuidesVisible"
+   value="1" />
+<vectornator:setting
+   key="CMYKEnabledKey"
+   value="0" />
+<vectornator:setting
+   key="RulersVisible"
+   value="1" />
+<vectornator:setting
+   key="SnapToEdges"
+   value="1" />
+<vectornator:setting
+   key="OutlineMode"
+   value="0" />
+<vectornator:setting
+   key="DisplayWhiteBackground"
+   value="0" />
+<vectornator:setting
+   key="doHistoryDisabled"
+   value="0" />
+<vectornator:setting
+   key="SnapToGuides"
+   value="1" />
+<vectornator:setting
+   key="TimeLapseWatermarkDisabled"
+   value="0" />
+<vectornator:setting
+   key="Units"
+   value="Points" />
+<vectornator:setting
+   key="SnapToGrid"
+   value="0" />
+<vectornator:setting
+   key="IsolateActiveLayer"
+   value="0" />
+<vectornator:setting
+   key="DynamicGuides"
+   value="1" />
+</metadata>
+<defs
+   id="defs877"><linearGradient
+   inkscape:collect="always"
+   id="linearGradient11803"><stop
+     style="stop-color:#ffffff;stop-opacity:1"
+     offset="0"
+     id="stop11799" /><stop
+     style="stop-color:#363636;stop-opacity:1"
+     offset="1"
+     id="stop11801" /></linearGradient>
+
+
+
+
+
+<linearGradient
+   inkscape:collect="always"
+   id="linearGradient827"><stop
+     style="stop-color:#ff00f2;stop-opacity:1"
+     offset="0"
+     id="stop823" /><stop
+     style="stop-color:#ff7900;stop-opacity:1"
+     offset="1"
+     id="stop825" /></linearGradient><linearGradient
+   inkscape:collect="always"
+   xlink:href="#linearGradient827"
+   id="linearGradient829"
+   x1="95.084503"
+   y1="489.0242"
+   x2="246.73827"
+   y2="428.04172"
+   gradientUnits="userSpaceOnUse" /><linearGradient
+   inkscape:collect="always"
+   xlink:href="#linearGradient11803"
+   id="linearGradient11805"
+   x1="20.685129"
+   y1="75.707741"
+   x2="73.966011"
+   y2="50.51582"
+   gradientUnits="userSpaceOnUse" /><filter
+   style="color-interpolation-filters:sRGB;"
+   inkscape:label="Blur"
+   id="filter12967"
+   x="-0.22038049"
+   y="-0.22038049"
+   width="1.440761"
+   height="1.440761"><feGaussianBlur
+     stdDeviation="6 6"
+     result="blur"
+     id="feGaussianBlur12965" /></filter></defs>
+
+<g
+   id="g7967"
+   transform="translate(8.6398356,-1.9032884)"><rect
+     style="opacity:1;fill:url(#linearGradient11805);stroke:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1;filter:url(#filter12967)"
+     id="rect11286"
+     width="65.341537"
+     height="65.341537"
+     x="15.512896"
+     y="26.868519"
+     ry="14.170454" /></g></svg>

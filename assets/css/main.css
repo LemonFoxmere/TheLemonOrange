@@ -1,3 +1,8 @@
+:root{
+    overflow-x: hidden !important;
+    overscroll-behavior-x: none;
+}
+
 body{
     background-color: #e0e0e0;
     margin:0;
@@ -6,7 +11,10 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow-x: hidden;
+
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+    overscroll-behavior-x: none;
 }
 
 .notransition {
@@ -34,28 +42,32 @@ body{
     user-select: none;
 
     position: absolute;
-    z-index: 999;
+    z-index: 9999 !important;
     right:5rem;
+    
+    visibility: hidden;
 }
 
 .disable-hidden{
     opacity: 0 !important;
-    pointer-events: none;
+    pointer-events: none !important;
 }
 .noheight{
     height:0 !important;
 }
 
 #logo-bg-container{
-    /* width:25rem; height:25rem; */
     width:100vw; height:100vh;
+    margin:0;
 
     position: fixed;
     top:0; left:0;
 
     background-color: transparent;
-    
-    transition: all 800ms cubic-bezier(0.295, 0.015, 0.040, 1.000)
+
+    perspective: 75rem;
+    -moz-perspective: 75rem;
+    -webkit-perspective: 75rem;
 }
 #logo-bg{
     width:100vw; height:100vh;
@@ -69,29 +81,29 @@ body{
     background: linear-gradient(45deg, #f2f2f2 0%, #e0e0e0 100%);
 
     z-index: 2;
-    transition: all 800ms cubic-bezier(0.295, 0.015, 0.040, 1.000);
+    transition: all 700ms cubic-bezier(0.295, 0.015, 0.040, 1.000);
 
-    shape-rendering: crispEdges;
+    shape-rendering: optimizeSpeed;
+    image-rendering: optimizeSpeed;
 }
 #logo-bg-shadow{
     position:absolute;
-    transform: perspective(75rem) rotateY(-20deg) rotateX(10deg) scale(0.9) translateX(-24rem) translateY(2rem);
-    -moz-transform: perspective(75rem) rotateY(-20deg) rotateX(10deg) scale(0.9) translateX(-24rem) translateY(2rem);
-    -webkit-transform: perspective(75rem) rotateY(-20deg) rotateX(10deg) scale(0.9) translateX(-24rem) translateY(2rem);
     width:100vw; height:100vh;
+    border-radius: 10rem;
     
     transform-style: preserve-3d;
-    
-    background: rgb(177,177,177);
-    background: linear-gradient(-90deg, rgba(177,177,177,1) 0%, rgb(236, 236, 236) 100%);
+    scale: 1.6;
+
     opacity: 0;
 
-    filter:blur(45px);
+    transition: all 700ms cubic-bezier(0.295, 0.015, 0.040, 1.000);
+    image-rendering: optimizeSpeed;
 
-    border-radius: 10rem;
+    perspective: 75rem;
+    -moz-perspective: 75rem;
+    -webkit-perspective: 75rem;
 
-    transition: all 800ms cubic-bezier(0.295, 0.015, 0.040, 1.000);
-    shape-rendering: crispEdges;
+    pointer-events: none;
 }
 
 .connection-btn:hover{
@@ -105,26 +117,48 @@ body{
 }
 
 .logo-icon-hidden{
-    transform: translate(-4rem, -3rem) !important;
     opacity: 0 !important;
 }
 
+.carousel-indicator{
+    width: 1rem; height: 1rem;
+    border-radius: 0.75rem;
+    margin: 0 0.3rem 0 0.3rem;
+    background-color: #d3d3d3;
+    cursor: pointer;
+
+    box-shadow: inset 0 0 6px #afafaf;
+
+    transition: all 300ms cubic-bezier(0.295, 0.015, 0.040, 1.000)
+}.carousel-indicator:hover{
+    transform: scale(1.5);
+}
+.carousel-indicator-active{
+    background-color: #303030;
+    box-shadow: 0 0 5px #ffffff;
+    box-shadow: inset 0 0 6px #000000;
+}
+
+.contact-elements{
+    transition: all 500ms cubic-bezier(0.295, 0.015, 0.040, 1.000)
+}
+
+
 /* tiny */
 @media screen and (min-width: 0) {
+    #logo-bg-shadow{
+        display: none;
+    }
     .logo-3d{
         position: absolute;
 
-        width:30rem; height:30rem;
-        transition: all 350ms cubic-bezier(0.260, 0.050, 0.250, 1.000); /* custom */
-        pointer-events: none;
-    }
-}
+        width:35rem; height:35rem;
 
-/* medium */
-@media screen and (min-width: 800px) {
-    .logo-3d{
-        width:40rem; height:40rem;
         transition: all 350ms cubic-bezier(0.260, 0.050, 0.250, 1.000); /* custom */
+        -moz-transition: all 350ms cubic-bezier(0.260, 0.050, 0.250, 1.000); /* custom */
+        -webkit-transition: all 350ms cubic-bezier(0.260, 0.050, 0.250, 1.000); /* custom */
+        
+        pointer-events: none;
     }
     .connection-btn{
         cursor:pointer;
@@ -134,26 +168,245 @@ body{
         opacity: 0.4;
         transition: all 300ms cubic-bezier(0.295, 0.015, 0.040, 1.000);
     }.connection-img{
-        height:2.5rem;
+        height:2.75rem;
         transition: all 300ms cubic-bezier(0.295, 0.015, 0.040, 1.000);
+    }
+
+    /* page elements */
+    .page-container{
+        width: 90vw; margin-left:0;
+    }
+    #page2{
+        margin-top:50vh
+    }#page3{
+        margin-top:80vh;
+    }
+
+    .logo-bg-arrows{
+        opacity: 0.3;
+        height: 5.5rem;
+        margin: 0 8vw 0 8vw;
+    }
+
+    /* triggers */
+    #trig-3{
+        top:25vh;
+    }#trig-4{
+        top: -8vh;
+    }#trig-delta{
+        top:-20% !important
+    }
+
+    #carousel-indicator-container{
+        transform: translateY(75vh) !important;
+    }
+
+    button{
+        width: fit-content;
+        padding: 0.25rem 1.5rem 0.25rem 1.5rem;
+        
+        font-family: Poppins, Helvetica, sans-serif, Arial;
+        background-color: #f7f7f7;
+        border: 1px solid #c2c2c2;
+        border-radius: 999rem;
+        outline: 2px solid transparent;
+        color: #717171;
+
+        overflow: hidden;
+        white-space: nowrap;
+        
+        cursor: pointer;
+        transition: all 300ms cubic-bezier(0.260, 0.050, 0.250, 1.000), color 200ms cubic-bezier(0.260, 0.050, 0.250, 1.000); /* custom */
+
+    } button:hover{
+        background-color: #303030;
+        border-color: #303030;
+        color:#f2f2f2;
+        scale:1.1;
+    }
+
+    .spinning-ring{
+        position: absolute;
+        top:-0.75rem;
+    
+        background-color: transparent;
+        border: 4px solid;
+        border-radius: 999rem;
+        width: 3.25rem;
+        height: 3.25rem;
+
+        transform-style: preserve-3d;
+        perspective: 75rem;
+
+        shape-rendering: crispEdges;
+        transition: opacity 1000ms cubic-bezier(0.260, 0.050, 0.250, 1.000); /* custom */
+        transition-delay: 200ms;
+    } #ring-check{
+        position: absolute;
+        top:0;
+        transform: scale(0.6) translate(0.2rem, -0.1rem);
+        pointer-events: none;    
+    }
+
+    /* contact mode elements */
+    #contact-form{
+        transform: translateY(38vh);
+    } #sendmail-container{
+        margin-top: 5vh
+    }
+    .contact-mode .logo-3d{
+        width: 15rem; height: 15rem;
+        transform: none !important;
+    }
+    .contact-input{
+        font-family: Poppins, Helvetica, sans-serif, Arial;
+        font-size: 1rem;
+        border-radius:0.8rem;
+        border:1px solid #c4c4c4;
+        padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+        background-color: #f7f7f7;
+        outline: 2px solid #eaeaea;
+    }
+    .contact-textarea{
+        resize: none;
+        border-radius:0.8rem;
+        border:1px solid #c4c4c4;
+        font-family: Poppins, Helvetica, sans-serif, Arial;
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem 0.4rem 0.6rem;
+        background-color: #f7f7f7;
+        outline: 2px solid #eaeaea;
+    }.contact-input:focus, .contact-textarea:focus{border: 2px solid #303030;}
+
+    button{
+        font-size: 1.2rem;
+    }
+}
+
+/* medium */
+@media screen and (min-width: 900px) {
+    #logo-bg-shadow{
+        display: inline;
+    }
+    .logo-3d{
+        width:40rem; height:40rem;
+    }
+    .connection-btn{
+        margin: 1rem 0 0 0.8rem;
+    }.connection-img{
+        height:2.5rem;
+    }
+
+    #carousel-indicator-container{
+        transform: none !important;
+    }
+
+    /* page elements */
+    .page-container{
+        width:27rem; margin-left:27rem;
+    }
+    #page2{
+        margin-top:60vh
+    }#page3{
+        margin-top:50vh
+    }#trig-delta{
+        top:10% !important
     }
 
     .logo-bg-arrows{
         opacity: 0.1;
         cursor: pointer;
 
-        height:6rem;
+        height: 7rem;
         transition: all 700ms cubic-bezier(0.295, 0.015, 0.040, 1.000);
+        margin: 0;
+    }
+
+    /* triggers */
+    #trig-3{
+        top:inherit;
+    }#trig-4{
+        top:50%;
+    }
+
+    /* contact mode elements */
+    #contact-form{
+        transform: translateY(1.75rem);
+    } #sendmail-container{
+        margin-top: 1.65rem
+    }
+    .contact-mode .logo-3d{
+        width: 9rem; height: 9rem;
+        transform: translate(-5rem, -12rem) !important;
+    }
+    .contact-input{
+        font-family: Poppins, Helvetica, sans-serif, Arial;
+        font-size: 1rem;
+        border-radius:0.8rem;
+        border:1px solid #c4c4c4;
+        padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+        background-color: #f7f7f7;
+        outline: 2px solid #eaeaea;
+    }
+    .contact-textarea{
+        resize: none;
+        border-radius:0.8rem;
+        border:1px solid #c4c4c4;
+        font-family: Poppins, Helvetica, sans-serif, Arial;
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem 0.4rem 0.6rem;
+        background-color: #f7f7f7;
+        outline: 2px solid #eaeaea;
+    }.contact-input:focus, .contact-textarea:focus{border: 2px solid #303030;}
+    
+    button{
+        font-size: 1.2rem;
     }
 }
 
 /* large */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
     .logo-3d{
         width:50rem; height:50rem;
-        transition: all 350ms cubic-bezier(0.260, 0.050, 0.250, 1.000); /* custom */
     }
     .logo-bg-arrows{
         height:7rem
+    }
+    
+    /* page elements */
+    .page-container{
+        width:38rem; margin-left:32rem;
+    }
+
+    /* triggers */
+    #trig-3{
+        top:inherit;
+    }#trig-4{
+        top:50%;
+    }
+
+    /* contact mode elements */
+    #contact-form{
+        transform: translateY(2.5rem);
+    } #sendmail-container{
+        margin-top: 2.25rem
+    }
+    .contact-mode .logo-3d{
+        width: 12rem; height: 12rem;
+        transform: translate(-6rem, -13.5rem) !important;
+    }
+    .contact-input{
+        font-size: 1.1rem;
+        border-radius:1rem;
+        padding: 0.5rem 0.6rem 0.5rem 0.6rem;
+    }
+    .contact-textarea{
+        border-radius:1rem;
+        font-size: 1.1rem;
+        padding: 0.5rem 0.8rem 0.5rem 0.6rem;
+    }
+    
+    button{
+        font-size: 1.2rem;
     }
 }

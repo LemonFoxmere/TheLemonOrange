@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="64.303818"
+   width="100"
    height="147.99998"
-   viewBox="0 0 17.013718 39.158331"
+   viewBox="0 0 26.458332 39.158331"
    version="1.1"
    id="svg5"
    inkscape:version="1.1 (c4e8f9e, 2021-05-24)"
@@ -40,8 +40,8 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="4.2648337"
-     inkscape:cx="14.537495"
-     inkscape:cy="71.984049"
+     inkscape:cx="44.550389"
+     inkscape:cy="72.453001"
      inkscape:window-width="1440"
      inkscape:window-height="790"
      inkscape:window-x="0"
@@ -61,8 +61,8 @@
      id="layer1"
      transform="translate(-19.498779,2.6458333)">
     <path
-       style="color:#000000;fill:#272727;fill-opacity:1;stroke-width:0.868739;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none"
-       d="m 32.68552,-0.03907601 a 2.2985409,2.2985409 0 0 0 -1.477875,0.9535771 L 21.023713,15.62538 a 2.2987707,2.2987707 0 0 0 0,2.616398 l 10.183932,14.71088 a 2.2985409,2.2985409 0 0 0 3.198386,0.581987 2.2985409,2.2985409 0 0 0 0.581988,-3.198386 L 25.710154,16.93358 34.988019,3.5308998 A 2.2985409,2.2985409 0 0 0 34.406031,0.33251357 2.2985409,2.2985409 0 0 0 32.68552,-0.03907601 Z"
+       style="color:#000000;fill:#000000;fill-opacity:1;stroke-width:0.999949;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none"
+       d="M 33.391948,-2.6029862 A 2.6456579,2.6457423 0 0 0 31.69089,-1.5053684 L 19.969019,15.427632 a 2.6459224,2.6460068 0 0 0 0,3.011613 L 31.69089,35.372247 a 2.6456579,2.6457423 0 0 0 3.681394,0.669898 2.6456579,2.6457423 0 0 0 0.669877,-3.681512 L 25.363188,16.93344 36.042161,1.506245 a 2.6456579,2.6457423 0 0 0 -0.669877,-3.6815119 2.6456579,2.6457423 0 0 0 -1.980336,-0.4277193 z"
        id="path958" />
   </g>
 </svg>
