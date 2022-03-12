@@ -64,6 +64,7 @@ body{
     top:0; left:0;
 
     background-color: transparent;
+    transform-style: flat;
 
     perspective: 75rem;
     -moz-perspective: 75rem;
@@ -192,7 +193,7 @@ body{
     #trig-3{
         top:25vh;
     }#trig-4{
-        top: -8vh;
+        top: -4rem;
     }#trig-delta{
         top:-20% !important
     }
@@ -250,7 +251,7 @@ body{
 
     /* contact mode elements */
     #contact-form{
-        transform: translateY(38vh);
+        transform: translateY(19rem);
     } #sendmail-container{
         margin-top: 5vh
     }
