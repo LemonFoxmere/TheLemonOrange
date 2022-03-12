@@ -101,7 +101,7 @@ p{
         text-shadow: none;
         font-size: 2.5rem;
         color:#636363;
-        top:53%;
+        transform: translateY(5.5rem);
     }#contact-title:after{
         content: " Me";
     }
