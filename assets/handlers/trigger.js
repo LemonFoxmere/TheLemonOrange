@@ -173,11 +173,11 @@ window.onresize = () => {
 }
 
 window.setInterval(() => {
-    if(trig4_passed){
-        document.getElementById("logo-bg-container").style.top = `${(
-            document.getElementById("trig-4").getBoundingClientRect().top - document.getElementById("trig-alpha").getBoundingClientRect().top) + window.scrollY}px`
-    }
-        // reset connection buttons if screen width is big enough again
-        if(!is_mobile()){document.querySelectorAll(".connection-btn").forEach(e => e.classList.remove("disable-hidden"))}
-        else{document.querySelectorAll(".connection-btn").forEach(e => e.classList.add("disable-hidden"))}
+    // if(trig4_passed){
+    //     document.getElementById("logo-bg-container").style.top = `${(
+    //         document.getElementById("trig-4").getBoundingClientRect().top - document.getElementById("trig-alpha").getBoundingClientRect().top) + window.scrollY}px`
+    // }
+    // reset connection buttons if screen width is big enough again
+    if(!is_mobile()){document.querySelectorAll(".connection-btn").forEach(e => e.classList.remove("disable-hidden"))}
+    else{document.querySelectorAll(".connection-btn").forEach(e => e.classList.add("disable-hidden"))}
 }, 1)
