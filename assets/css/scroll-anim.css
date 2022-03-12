@@ -5,21 +5,20 @@
 /* tiny */
 @media screen and (min-width: 0) {
     .app-bg-style{
-        width:120vw !important;
-        height:120vh !important;
-        border-radius: 4rem !important;
+        transform: none !important;
+        width:100vw !important;
+        height:100vh !important;
         filter: brightness(0.9) blur(30px);
         opacity: 0.5;
     }
     .project-mobile{
         filter: brightness(1) blur(0px) !important;
         opacity: 1 !important;
-        transform: translateY(-5vh) !important;
     }
 
     .app-bg-contact-style{
         transform: none !important;
-        height:250vh !important;
+        height:100vh !important;
         background: #f2f2f2 !important;
         background: linear-gradient(-20deg, #f2f2f2 0%, #e0e0e0 100%) !important;
     }

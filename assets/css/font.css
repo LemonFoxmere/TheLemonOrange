@@ -89,8 +89,9 @@ p{
 
     #copyright{
         position: absolute;
-        bottom:0.5rem;
-        font-size: 0.8rem;
+        text-align: center;
+        bottom:1rem;
+        font-size: 1rem;
         opacity: 0.5;
     }
 
@@ -101,7 +102,7 @@ p{
         text-shadow: none;
         font-size: 2.5rem;
         color:#636363;
-        transform: translateY(5.5rem);
+        transform: translateY(-6.5rem);
     }#contact-title:after{
         content: " Me 💬";
     }
@@ -122,6 +123,7 @@ p{
         width:fit-content; height:2.7rem; margin-bottom: 0.5rem;
         justify-content: center;
     }
+    #copyright::after{content: ", All Rights Reserved";}
 
     .page1-h1{
         width: fit-content;

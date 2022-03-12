@@ -16,7 +16,7 @@ let trig4_1_passed = false, trig4_1_passed_prev = false
 let scroll_with_page_y = 0
 
 // update loops
-window.setInterval(e => {
+window.onscroll = e => {
     passed_trigger("trig-1", "trig-beta", ()=>{ // trigger 1 which fades out the title text and move the logo to the other side
         trig1_passed = true
         if(trig1_passed_prev == false && trig1_passed == true){ // prevent repeated execution
@@ -48,6 +48,8 @@ window.setInterval(e => {
             document.getElementById("logo-trans-right").classList.remove("disable-hidden")
             document.getElementById("logo-trans-left").classList.remove("disable-hidden")
             document.getElementById("carousel-indicator-container").classList.remove("disable-hidden")
+
+            document.querySelectorAll(".connection-btn").forEach(e => e.classList.remove("disable-hidden"))
     
             // unhide the projects page and hide the about page
             document.getElementById("page1").classList.add("disable-hidden")
@@ -64,6 +66,8 @@ window.setInterval(e => {
             document.getElementById("logo-trans-left").classList.add("disable-hidden")
             document.getElementById("carousel-indicator-container").classList.add("disable-hidden")
     
+            if(is_mobile()) document.querySelectorAll(".connection-btn").forEach(e => e.classList.add("disable-hidden"))
+
             // hide the projects page and unhide the about page
             document.getElementById("page1").classList.remove("disable-hidden")
             document.getElementById("logo-bg").classList.remove("project-mobile")
@@ -75,13 +79,13 @@ window.setInterval(e => {
     passed_trigger("trig-3", "trig-epsilon", ()=>{ // trigger 3 which transitions the page to a contact form
         trig3_passed = true
         if(trig3_passed_prev == false && trig3_passed == true){ // prevent repeated execution
-            // update_project_to(0)
-            hide_connections()
-
             // hide the interactive element
+            document.getElementById("carousel-indicator-container").classList.add("disable-hidden")
             document.getElementById("logo-trans-right").classList.add("disable-hidden")
             document.getElementById("logo-trans-left").classList.add("disable-hidden")
-            document.getElementById("carousel-indicator-container").classList.add("disable-hidden")
+
+            // update_project_to(0)
+            hide_connections()
 
             // hide the project page
             document.getElementById("page2").classList.add("disable-hidden")
@@ -131,7 +135,7 @@ window.setInterval(e => {
 
     passed_trigger("trig-4", "trig-alpha", ()=>{ // trigger 3 which transitions the page to a contact form
         trig4_passed = true
-        if(trig4_passed_prev == false && trig4_passed == true){ // prevent repeated execution
+        if(trig4_passed_prev == false && trig4_passed == true && !is_mobile()){ // prevent repeated execution
             document.getElementById("logo-bg-container").style.position = "absolute"
             document.getElementById("logo-bg-container").style.top = `${(
                 document.getElementById("trig-4").getBoundingClientRect().top - document.getElementById("trig-alpha").getBoundingClientRect().top) + window.scrollY}px`
@@ -139,7 +143,7 @@ window.setInterval(e => {
         trig4_passed_prev = true
     }, () => {
         trig4_passed = false
-        if(trig4_passed_prev == true && trig4_passed == false){ // prevent repeated execution
+        if(trig4_passed_prev == true && trig4_passed == false && !is_mobile()){ // prevent repeated execution
             document.getElementById("logo-bg-container").style.top = `0px`
             document.getElementById("logo-bg-container").style.position = "fixed"
         }
@@ -149,8 +153,6 @@ window.setInterval(e => {
     passed_trigger("trig-4", "trig-delta", ()=>{ // trigger 3 which transitions the page to a contact form
         trig4_1_passed = true
         if(trig4_1_passed_prev == false && trig4_1_passed == true){ // prevent repeated execution
-            document.getElementById("logo-bg-container").style.top = `${(
-                document.getElementById("trig-4").getBoundingClientRect().top - document.getElementById("trig-alpha").getBoundingClientRect().top) + window.scrollY}px`
 
             document.getElementById("logo-bg-container").classList.add("disable-hidden")
             document.getElementById("page3").classList.add("disable-hidden")
@@ -160,8 +162,6 @@ window.setInterval(e => {
     }, () => {
         trig4_1_passed = false
         if(trig4_1_passed_prev == true && trig4_1_passed == false){ // prevent repeated execution
-            document.getElementById("logo-bg-container").style.top = `${(
-                document.getElementById("trig-4").getBoundingClientRect().top - document.getElementById("trig-alpha").getBoundingClientRect().top) + window.scrollY}px`
 
             document.getElementById("logo-bg-container").classList.remove("disable-hidden")
             document.getElementById("page3").classList.remove("disable-hidden")
@@ -169,8 +169,12 @@ window.setInterval(e => {
         }
         trig4_1_passed_prev = false
     })
+}
 
-    // reset connection buttons if screen width is big enough again
-    if(!is_mobile()){document.querySelectorAll(".connection-btn").forEach(e => e.classList.remove("disable-hidden"))}
-    else{document.querySelectorAll(".connection-btn").forEach(e => e.classList.add("disable-hidden"))}    
-}, 1)
+window.onresize = () => {
+    if((trig1_passed && !trig2_passed)){
+        // reset connection buttons if screen width is big enough again
+        if(!is_mobile()){document.querySelectorAll(".connection-btn").forEach(e => e.classList.remove("disable-hidden"))}
+        else{document.querySelectorAll(".connection-btn").forEach(e => e.classList.add("disable-hidden"))}    
+    }
+}

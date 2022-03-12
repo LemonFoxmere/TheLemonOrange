@@ -163,7 +163,7 @@ body{
     }
     .connection-btn{
         cursor:pointer;
-        margin: 1rem 0 0 0.8rem;
+        margin: 1rem 0 1rem 0.8rem;
         height:fit-content;
         filter: brightness(2);
         opacity: 0.4;
@@ -178,7 +178,7 @@ body{
         width: 90vw; margin-left:0;
     }
     #page2{
-        margin-top:50vh
+        margin-top:20vh
     }#page3{
         margin-top:70vh;
     }
@@ -186,7 +186,10 @@ body{
     .logo-bg-arrows{
         opacity: 0.3;
         height: 5.5rem;
-        margin: 0 8vw 0 8vw;
+    }
+
+    #carousel-indicator-container{
+        transform: translateY(70vh) !important;
     }
 
     /* triggers */
@@ -196,10 +199,6 @@ body{
         top: 0rem;
     }#trig-delta{
         top:-10% !important
-    }
-
-    #carousel-indicator-container{
-        transform: translateY(75vh) !important;
     }
 
     button{
@@ -251,13 +250,13 @@ body{
 
     /* contact mode elements */
     #contact-form{
-        transform: translateY(19rem);
+        transform: translateY(8rem);
     } #sendmail-container{
         margin-top: 5vh
     }
     .contact-mode .logo-3d{
         width: 15rem; height: 15rem;
-        transform: none !important;
+        transform: translateY(-13rem) !important;
     }
     .contact-input{
         font-family: Poppins, Helvetica, sans-serif, Arial;
