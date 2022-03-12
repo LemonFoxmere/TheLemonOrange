@@ -16,7 +16,7 @@ let trig4_1_passed = false, trig4_1_passed_prev = false
 let scroll_with_page_y = 0
 
 // update loops
-window.onscroll = evt => {
+window.setInterval(e => {
     passed_trigger("trig-1", "trig-beta", ()=>{ // trigger 1 which fades out the title text and move the logo to the other side
         trig1_passed = true
         if(trig1_passed_prev == false && trig1_passed == true){ // prevent repeated execution
@@ -169,14 +169,8 @@ window.onscroll = evt => {
         }
         trig4_1_passed_prev = false
     })
-}
 
-window.setInterval(() => {
-    // if(trig4_passed){
-    //     document.getElementById("logo-bg-container").style.top = `${(
-    //         document.getElementById("trig-4").getBoundingClientRect().top - document.getElementById("trig-alpha").getBoundingClientRect().top) + window.scrollY}px`
-    // }
     // reset connection buttons if screen width is big enough again
     if(!is_mobile()){document.querySelectorAll(".connection-btn").forEach(e => e.classList.remove("disable-hidden"))}
-    else{document.querySelectorAll(".connection-btn").forEach(e => e.classList.add("disable-hidden"))}
+    else{document.querySelectorAll(".connection-btn").forEach(e => e.classList.add("disable-hidden"))}    
 }, 1)

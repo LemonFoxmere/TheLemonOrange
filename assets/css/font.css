@@ -103,7 +103,7 @@ p{
         color:#636363;
         transform: translateY(5.5rem);
     }#contact-title:after{
-        content: " Me";
+        content: " Me 💬";
     }
     .contact-label{
         font-family: Poppins, Helvetica, sans-serif, Arial;
