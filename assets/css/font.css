@@ -90,7 +90,7 @@ p{
     #copyright{
         position: absolute;
         text-align: center;
-        bottom:1rem;
+        top:1rem;
         font-size: 1rem;
         opacity: 0.5;
     }
@@ -102,7 +102,7 @@ p{
         text-shadow: none;
         font-size: 2.5rem;
         color:#636363;
-        transform: translateY(-6.5rem);
+        transform: translateY(-10rem);
     }#contact-title:after{
         content: " Me 💬";
     }
@@ -122,6 +122,9 @@ p{
     #type-text-container{
         width:fit-content; height:2.7rem; margin-bottom: 0.5rem;
         justify-content: center;
+    }
+    #copyright{
+        bottom:1rem; top: unset;
     }
     #copyright::after{content: ", All Rights Reserved";}
 

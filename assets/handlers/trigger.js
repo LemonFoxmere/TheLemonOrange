@@ -23,9 +23,13 @@ window.onscroll = e => {
             document.getElementById("title-text").classList.add("opacity-none")
             document.getElementById("logo-bg").classList.add("app-bg-style")
             document.getElementById("logo-bg-shadow").classList.add("app-bg-shadow-style")
-            // if on mobile, hide the connection buttons
-            if(is_mobile()) document.querySelectorAll(".connection-btn").forEach(e => e.classList.add("disable-hidden"))
             document.getElementById("page1").style.opacity = 1
+            // if on mobile, hide the connection buttons and show the project page before hand
+            if(is_mobile()){
+                document.getElementById("page2").classList.remove("disable-hidden")
+                document.querySelectorAll(".connection-btn").forEach(e => e.classList.add("disable-hidden"))
+                update_project_to(app_index)
+            }
         }
         trig1_passed_prev = true
     }, () => {
@@ -43,7 +47,7 @@ window.onscroll = e => {
     passed_trigger("trig-2", "trig-epsilon", ()=>{ // trigger 2 which transitions the page to an interactive project page
         trig2_passed = true
         if(trig2_passed_prev == false && trig2_passed == true){ // prevent repeated execution
-            update_project_to(app_index, false, true)
+            update_project_to(app_index, true, !is_mobile())
 
             document.getElementById("logo-trans-right").classList.remove("disable-hidden")
             document.getElementById("logo-trans-left").classList.remove("disable-hidden")
@@ -71,7 +75,7 @@ window.onscroll = e => {
             // hide the projects page and unhide the about page
             document.getElementById("page1").classList.remove("disable-hidden")
             document.getElementById("logo-bg").classList.remove("project-mobile")
-            document.getElementById("page2").classList.add("disable-hidden")    
+            if(!is_mobile()) document.getElementById("page2").classList.add("disable-hidden")    
         }
         trig2_passed_prev = false
     })
@@ -88,7 +92,7 @@ window.onscroll = e => {
             hide_connections()
 
             // hide the project page
-            document.getElementById("page2").classList.add("disable-hidden")
+            if(!is_mobile()) document.getElementById("page2").classList.add("disable-hidden")
             document.getElementById("page3").classList.remove("disable-hidden")
 
             // change the logo card to a contact card
@@ -135,24 +139,24 @@ window.onscroll = e => {
 
     passed_trigger("trig-4", "trig-alpha", ()=>{ // trigger 3 which transitions the page to a contact form
         trig4_passed = true
-        if(trig4_passed_prev == false && trig4_passed == true && !is_mobile()){ // prevent repeated execution
-            document.getElementById("logo-bg-container").style.position = "absolute"
-            document.getElementById("logo-bg-container").style.top = `${(
-                document.getElementById("trig-4").getBoundingClientRect().top - document.getElementById("trig-alpha").getBoundingClientRect().top) + window.scrollY}px`
-        }
+        // if(trig4_passed_prev == false && trig4_passed == true && !is_mobile()){ // prevent repeated execution
+        //     document.getElementById("logo-bg-container").style.position = "absolute"
+        //     document.getElementById("logo-bg-container").style.top = `${(
+        //         document.getElementById("trig-4").getBoundingClientRect().top - document.getElementById("trig-alpha").getBoundingClientRect().top) + window.scrollY}px`
+        // }
         trig4_passed_prev = true
     }, () => {
         trig4_passed = false
-        if(trig4_passed_prev == true && trig4_passed == false && !is_mobile()){ // prevent repeated execution
-            document.getElementById("logo-bg-container").style.top = `0px`
-            document.getElementById("logo-bg-container").style.position = "fixed"
-        }
+        // if(trig4_passed_prev == true && trig4_passed == false && !is_mobile()){ // prevent repeated execution
+        //     document.getElementById("logo-bg-container").style.top = `0px`
+        //     document.getElementById("logo-bg-container").style.position = "fixed"
+        // }
         trig4_passed_prev = false
     })
 
     passed_trigger("trig-4", "trig-delta", ()=>{ // trigger 3 which transitions the page to a contact form
         trig4_1_passed = true
-        if(trig4_1_passed_prev == false && trig4_1_passed == true){ // prevent repeated execution
+        if(trig4_1_passed_prev == false && trig4_1_passed == true && !is_mobile()){ // prevent repeated execution
 
             document.getElementById("logo-bg-container").classList.add("disable-hidden")
             document.getElementById("page3").classList.add("disable-hidden")
@@ -161,7 +165,7 @@ window.onscroll = e => {
         trig4_1_passed_prev = true
     }, () => {
         trig4_1_passed = false
-        if(trig4_1_passed_prev == true && trig4_1_passed == false){ // prevent repeated execution
+        if(trig4_1_passed_prev == true && trig4_1_passed == false && !is_mobile()){ // prevent repeated execution
 
             document.getElementById("logo-bg-container").classList.remove("disable-hidden")
             document.getElementById("page3").classList.remove("disable-hidden")

@@ -5,7 +5,7 @@
 /* tiny */
 @media screen and (min-width: 0) {
     .app-bg-style{
-        transform: none !important;
+        transform:none !important;
         width:100vw !important;
         height:100vh !important;
         filter: brightness(0.9) blur(30px);

@@ -23,10 +23,12 @@ let change_innerhtml = (id, new_val, no_transition) => {
 let update_medias = (target) => {
     document.querySelectorAll(".connection-img").forEach(e => {
         if(target[e.id] === undefined){
-            e.classList.add("noheight")
+            // e.classList.add("noheight")
+            e.parentElement.classList.add("noheight")
         } else {
             if(target[e.id] !== 1) e.parentElement.href = target[e.id]
-            e.classList.remove("noheight")
+            // e.classList.remove("noheight")
+            e.parentElement.classList.remove("noheight")
         }
     })
 }
@@ -89,9 +91,16 @@ let available_apps = [
 ]
 
 
-let update_project_to = (index, set=false, instant=false)=> {
-    if(set) app_index = index
+let update_project_to = (index, set=false, instant=false, currently_on=0)=> {
+    if(set) {
+        app_index = index
+        instant = index === currently_on
+    } else{
+        instant = index === app_index
+    }
+
     let data = available_apps[index]
+
     change_innerhtml("project-title", data.title, instant)
     change_innerhtml("project-description", data.description, instant)
     change_innerhtml("project-maintain", data.maintain, instant)
@@ -106,6 +115,7 @@ let update_project_to = (index, set=false, instant=false)=> {
             document.querySelectorAll(".carousel-indicator")[i].classList.add("carousel-indicator-active")
         }
     }
+
 }
 let update_connections_to = (index) => {
     update_medias(available_apps[index].medias)
@@ -120,11 +130,11 @@ document.getElementById("logo-trans-right").onclick = e => {
     if(app_index > available_apps.length-1) app_index = 0
 
     // get the new project object
-    update_project_to(app_index)
+    update_project_to(app_index, true)
 }
 document.getElementById("logo-trans-left").onclick = e => {
     app_index -= 1
     if(app_index < 0) app_index = available_apps.length - 1
 
-    update_project_to(app_index)
+    update_project_to(app_index, true)
 }
