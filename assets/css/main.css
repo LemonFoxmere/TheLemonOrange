@@ -172,7 +172,7 @@ body{
     }
     .connection-btn{
         cursor:pointer;
-        margin: 0 0.5rem 4rem 0.5rem;
+        margin: 0 0.5rem 7rem 0.5rem;
         height:2.75rem;
         filter: brightness(2);
         opacity: 0.4;
@@ -199,7 +199,7 @@ body{
     }
 
     #carousel-indicator-container{
-        top: 75% !important;
+        top: 70% !important;
     }
 
     /* triggers */
