@@ -98,6 +98,7 @@ window.onscroll = e => {
             // change the logo card to a contact card
             document.getElementById("logo-bg").classList.add("app-bg-contact-style")
             document.getElementById("logo-bg").classList.remove("app-bg-style")
+            document.getElementById("logo-bg-color").classList.add("app-bg-contact-color")
             document.getElementById("logo-bg-shadow").classList.add("app-bg-contact-shadow-style")
             document.getElementById("logo-bg-shadow").classList.remove("app-bg-shadow-style")
             
@@ -129,6 +130,7 @@ window.onscroll = e => {
             // change the logo card back to normal
             document.getElementById("logo-bg").classList.add("app-bg-style")
             document.getElementById("logo-bg").classList.remove("app-bg-contact-style")
+            document.getElementById("logo-bg-color").classList.remove("app-bg-contact-color")
             document.getElementById("logo-bg-shadow").classList.add("app-bg-shadow-style")
             document.getElementById("logo-bg-shadow").classList.remove("app-bg-contact-shadow-style")
 

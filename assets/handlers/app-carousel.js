@@ -92,7 +92,7 @@ let available_apps = [
 
 
 let update_project_to = (index, set=false, instant=false, currently_on=0)=> {
-    if(set) {
+    if(set && is_mobile()) {
         app_index = index
         instant = index === currently_on
     } else{
@@ -130,11 +130,11 @@ document.getElementById("logo-trans-right").onclick = e => {
     if(app_index > available_apps.length-1) app_index = 0
 
     // get the new project object
-    update_project_to(app_index, true)
+    update_project_to(app_index, true, false, app_index+1)
 }
 document.getElementById("logo-trans-left").onclick = e => {
     app_index -= 1
     if(app_index < 0) app_index = available_apps.length - 1
 
-    update_project_to(app_index, true)
+    update_project_to(app_index, true, false, app_index+1)
 }

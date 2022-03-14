@@ -103,6 +103,7 @@ p{
         font-size: 2.5rem;
         color:#636363;
         transform: translateY(-10rem);
+        z-index: 2;
     }#contact-title:after{
         content: " Me 💬";
     }
