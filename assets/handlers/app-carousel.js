@@ -75,13 +75,18 @@ let available_apps = [
     },
     { // AIVIS
         title:"AIVIS",
-        description:"AIVIS (AI Visualized) is the predecessor to DeepFusion and has the same idea to it, just that its functionalities are more watered down (and also doesn't look as good).",
+        description:"AIVIS (AI Visualized) is the predecessor to DeepFusion and has the same idea to it, just that its functionalities are more watered down and also don't have the graphical sophitication as DeepFusion. It does, however, provide you with a customizable MLP & custom datasets to play with",
         medias:{"github-conn":"https://github.com/LemonOrangeWasTaken/AIVIS",
                 "launch-conn":"https://aivisualized.com"},
         logo:"aivis-icon",
         maintain:"This app is no longer being maintained<br>(It's been replaced by DeepFusion)."
-    },
-    { // Java 3d renderer
+    },{ // Java plane designer
+        title:"Aerodesigner",
+        description:"Aerodesigner is a Java software I designed for a club called <a href=\"https://aerovate.org/\" target=\"_blank\">Aerovate™</a>, a aerospace engineering club.<br>It acts as an interface to an open source CLI simulation program (MachUpX), so that users can create and test aeroplane designs easier.",
+        medias:{"github-conn":"https://github.com/LemonOrangeWasTaken/Aero-Designer"},
+        logo:"aerodesiner-icon",
+        maintain:"This project is no longer being maintained."
+    },{ // Java 3d renderer
         title:"3D \"Game\" Engine",
         description:"This was one of the first big projects that I made. I designed this makeshift engine in desmos (yes, really), and coded it in Java with Jframe. It render edges and vertecies quite well, but can't handle faces.",
         medias:{"github-conn":"https://github.com/LemonOrangeWasTaken/3d-Renderer-V1"},
@@ -91,19 +96,16 @@ let available_apps = [
 ]
 
 
-let update_project_to = (index, set=false, instant=false, currently_on=0)=> {
+let update_project_to = (index, set=false)=> {
     if(set && is_mobile()) {
         app_index = index
-        instant = index === currently_on
-    } else{
-        instant = index === app_index
     }
 
     let data = available_apps[index]
 
-    change_innerhtml("project-title", data.title, instant)
-    change_innerhtml("project-description", data.description, instant)
-    change_innerhtml("project-maintain", data.maintain, instant)
+    change_innerhtml("project-title", data.title, true)
+    change_innerhtml("project-description", data.description, true)
+    change_innerhtml("project-maintain", data.maintain, true)
     update_medias(data.medias)
     update_logo(data.logo)
 
@@ -130,11 +132,11 @@ document.getElementById("logo-trans-right").onclick = e => {
     if(app_index > available_apps.length-1) app_index = 0
 
     // get the new project object
-    update_project_to(app_index, true, false, app_index+1)
+    update_project_to(app_index, true)
 }
 document.getElementById("logo-trans-left").onclick = e => {
     app_index -= 1
     if(app_index < 0) app_index = available_apps.length - 1
 
-    update_project_to(app_index, true, false, app_index+1)
+    update_project_to(app_index, true)
 }

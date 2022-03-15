@@ -19,6 +19,15 @@ p{
     font-family: Poppins, Helvetica, sans-serif, Arial;
 }
 
+a{
+    color:inherit;
+    filter: brightness(0.6);
+    font-weight: 600;
+    text-decoration: none;
+}a:hover{
+    text-decoration: underline;
+}
+
 /* tiny */
 @media screen and (min-width: 0) {
     #type-text-container{

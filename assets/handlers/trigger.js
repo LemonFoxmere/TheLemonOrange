@@ -47,7 +47,7 @@ window.onscroll = e => {
     passed_trigger("trig-2", "trig-epsilon", ()=>{ // trigger 2 which transitions the page to an interactive project page
         trig2_passed = true
         if(trig2_passed_prev == false && trig2_passed == true){ // prevent repeated execution
-            update_project_to(app_index, true, !is_mobile())
+            update_project_to(app_index, true)
 
             document.getElementById("logo-trans-right").classList.remove("disable-hidden")
             document.getElementById("logo-trans-left").classList.remove("disable-hidden")
