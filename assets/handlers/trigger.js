@@ -23,7 +23,7 @@ window.onscroll = e => {
             document.getElementById("title-text").classList.add("opacity-none")
             document.getElementById("logo-bg").classList.add("app-bg-style")
             document.getElementById("logo-bg-shadow").classList.add("app-bg-shadow-style")
-            document.getElementById("page1").style.opacity = 1
+            document.getElementById("page1").classList.remove("disable-hidden")
             // if on mobile, hide the connection buttons and show the project page before hand
             if(is_mobile()){
                 document.getElementById("page2").classList.remove("disable-hidden")
@@ -39,7 +39,7 @@ window.onscroll = e => {
             document.getElementById("logo-bg").classList.remove("app-bg-style")
             document.getElementById("logo-bg-shadow").classList.remove("app-bg-shadow-style")
             document.querySelectorAll(".connection-btn").forEach(e => e.classList.remove("disable-hidden")) // for mobile
-            document.getElementById("page1").style.opacity = 0
+            document.getElementById("page1").classList.add("disable-hidden")
         }
         trig1_passed_prev = false
     })
