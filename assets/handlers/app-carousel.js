@@ -56,7 +56,7 @@ let available_apps = [
     },
     { // DeepFusion
         title:"DeepFusion",
-        description:"DeepFusion is a graphical neural network creation platform. It allows you to create, train, and test neural networks without any code. It was also won several awards, so that's pretty neat.",
+        description:"DeepFusion is a graphical neural network creation platform. It allows you to create, train, and test neural networks without any code. It also won several awards, so that's pretty nifty.",
         medias:{"github-conn":"https://github.com/LemonOrangeWasTaken/DeepFusion",
                 "launch-conn":"https://deepfusion.org"},
         logo:"deepfusion-icon",
