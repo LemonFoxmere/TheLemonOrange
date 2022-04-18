@@ -63,6 +63,7 @@ body{
 
     position: fixed;
     top:0; left:0;
+    transform-style: flat;
 
     background-color: transparent;
     transform-style: flat;
