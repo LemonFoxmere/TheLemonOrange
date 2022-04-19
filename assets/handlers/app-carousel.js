@@ -47,7 +47,7 @@ let app_index = 0
 // let available_apps = ["lemonorange", "deepfusion", "musiccat", "aivis", "renderingengine"]
 let available_apps = [
     { // original one
-        title:"My Projects 📦",
+        title:"My Stuff 📦",
         description:"This app icon is interactive! You can browse through my featured projects on there if you like, and the description for each one will pop up here.",
         medias:{
             "twitter-conn":"https://twitter.com/LemonOrangeTW",
@@ -72,7 +72,7 @@ let available_apps = [
     },
     { // Cat Midi
         title:"Cat & Midi",
-        description:"A glorified ML MIDI transcriber that I made to make cats sing songs I like. It was trained with <i>only</i> procedurally generated data, and it somehow works pleasantly well with real world music",
+        description:"A glorified ML MIDI transcriber that I made to make cats sing songs I like. It was trained with <i>only</i> procedurally generated data, and it somehow works pleasantly well with real world music.",
         medias:{"youtube-conn":"https://www.youtube.com/watch?v=5jNqtmPrc80",
                 "github-conn":"https://github.com/LemonOrangeWasTaken/CatMusicV2",
                 "reddit-conn":"https://www.reddit.com/r/programming/comments/o8qesl/i_taught_an_ai_to_make_cats_sing/",
@@ -83,7 +83,7 @@ let available_apps = [
     },
     { // AIVIS
         title:"AIVIS",
-        description:"AIVIS (AI Visualized) is the predecessor to DeepFusion and has the same idea to it, just that its functionalities are more watered down and also don't have the graphical sophitication as DeepFusion. It does, however, provide you with a customizable MLP & custom datasets to play with",
+        description:"AIVIS (AI Visualized) is the predecessor to DeepFusion and has the same idea to it, just that its functionalities are more watered down and also don't have the graphical sophitication as DeepFusion. It does, however, provide you with a customizable MLP & custom datasets to play with.",
         medias:{"github-conn":"https://github.com/LemonOrangeWasTaken/AIVIS",
                 "launch-conn":"https://aivisualized.com",
                 "conn-sep":"",

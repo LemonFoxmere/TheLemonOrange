@@ -22,7 +22,6 @@ window.onscroll = e => {
         if(trig1_passed_prev == false && trig1_passed == true){ // prevent repeated execution
             document.getElementById("title-text").classList.add("opacity-none")
             document.getElementById("logo-bg").classList.add("app-bg-style")
-            document.getElementById("logo-bg-shadow").classList.add("app-bg-shadow-style")
             document.getElementById("page1").classList.remove("disable-hidden")
             // if on mobile, hide the connection buttons and show the project page before hand
             if(is_mobile()){
@@ -37,7 +36,6 @@ window.onscroll = e => {
         if(trig1_passed_prev == true && trig1_passed == false){ // prevent repeated execution
             document.getElementById("title-text").classList.remove("opacity-none")
             document.getElementById("logo-bg").classList.remove("app-bg-style")
-            document.getElementById("logo-bg-shadow").classList.remove("app-bg-shadow-style")
             document.querySelectorAll(".connection-btn").forEach(e => e.classList.remove("disable-hidden")) // for mobile
             document.getElementById("page1").classList.add("disable-hidden")
         }
@@ -89,7 +87,7 @@ window.onscroll = e => {
             document.getElementById("logo-trans-left").classList.add("disable-hidden")
 
             // update_project_to(0)
-            hide_connections()
+            document.getElementById("social-container").classList.add("disable-hidden")
 
             // hide the project page
             if(!is_mobile()) document.getElementById("page2").classList.add("disable-hidden")
@@ -100,12 +98,10 @@ window.onscroll = e => {
             document.getElementById("logo-bg").classList.remove("app-bg-style")
             document.getElementById("logo-bg-color").classList.add("app-bg-contact-color")
             document.getElementById("logo-bg-shadow").classList.add("app-bg-contact-shadow-style")
-            document.getElementById("logo-bg-shadow").classList.remove("app-bg-shadow-style")
             
             // add contact mode to container to configure everything inside
-            document.getElementById("logo-bg-container").classList.add("contact-mode")
+            document.querySelectorAll(".logo-3d").forEach(e => e.classList.add("disable-hidden"))
 
-            // show all contact elements
             document.querySelectorAll(".contact-elements").forEach(e => e.classList.remove("disable-hidden"))
         }
         trig3_passed_prev = true
@@ -113,7 +109,7 @@ window.onscroll = e => {
         trig3_passed = false
         if(trig3_passed_prev == true && trig3_passed == false){ // prevent repeated execution
             // update_project_to(app_index, false, true)
-            update_connections_to(app_index)
+            document.getElementById("social-container").classList.remove("disable-hidden")
 
             // hide all contact elements
             document.querySelectorAll(".contact-elements").forEach(e => e.classList.add("disable-hidden"))
@@ -131,10 +127,9 @@ window.onscroll = e => {
             document.getElementById("logo-bg").classList.add("app-bg-style")
             document.getElementById("logo-bg").classList.remove("app-bg-contact-style")
             document.getElementById("logo-bg-color").classList.remove("app-bg-contact-color")
-            document.getElementById("logo-bg-shadow").classList.add("app-bg-shadow-style")
             document.getElementById("logo-bg-shadow").classList.remove("app-bg-contact-shadow-style")
 
-            document.getElementById("logo-bg-container").classList.remove("contact-mode")
+            document.querySelectorAll(".logo-3d").forEach(e => e.classList.remove("disable-hidden"))
         }
         trig3_passed_prev = false
     })

@@ -33,10 +33,13 @@
         width:35rem !important;
         height:35rem !important;
 
+        animation-play-state: running;
         animation: 7s ease-in-out infinite alternate upanddown;
 
         opacity:1;
         filter:none
+    }.app-bg-style:hover{
+        animation-play-state: paused;
     }
     .app-bg-shadow-style{
         transform: translate(1rem, 2rem);
