@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/font.css">
     <link rel="stylesheet" href="assets/css/scroll-anim.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -158,22 +159,30 @@
             </g>
             </svg>
             <!-- social media for icon 1 (main logo) -->
-            <section class="3d-icon-1" style="position:absolute; display: flex; justify-content: center; z-index: 2; height:100%; align-items: center; bottom:0;
-                                            height:fit-content;">
-                <a class="connection-btn unselectable" href="https://twitter.com/LemonOrangeTW" target="_blank">
+            <section id="social-container" class="3d-icon-1" style="position:absolute; display: flex; justify-content: center; z-index: 2; height:100%; align-items: center; bottom:0;
+                                            height:fit-content; transition: 200ms opacity ease-in-out">
+                <a style="cursor:pointer" class="connection-btn unselectable" href="https://twitter.com/LemonOrangeTW" target="_blank">
                     <img id="twitter-conn" class="connection-img unselectable" src="assets/img/twitter-connection.svg" alt="">
                 </a>
-                <a class="connection-btn unselectable" href="https://www.reddit.com/user/The747IsDead" target="_blank">
-                    <img id="reddit-conn" class="connection-img unselectable" src="assets/img/reddit-connection.svg" alt="">
-                </a>
-                <a class="connection-btn unselectable" href="https://www.youtube.com/channel/UCut2xeBl7HcPEPatqpEUoQw" target="_blank">
+                <a style="cursor:pointer" class="connection-btn unselectable" href="https://www.youtube.com/channel/UCut2xeBl7HcPEPatqpEUoQw" target="_blank">
                     <img id="youtube-conn" class="connection-img unselectable" src="assets/img/youtube-connection.svg" alt="">
                 </a>
-                <a class="connection-btn unselectable" href="https://github.com/LemonOrangeWasTaken" target="_blank">
+                <a style="cursor:pointer" class="connection-btn unselectable" href="https://medium.com/@thelemonorange" target="_blank">
+                    <img id="medium-conn" class="connection-img unselectable" src="assets/img/medium-connection.svg" alt="">
+                </a>
+                <a style="cursor:pointer" class="connection-btn unselectable" href="https://github.com/LemonOrangeWasTaken" target="_blank">
                     <img id="github-conn" class="connection-img unselectable" src="assets/img/github-connection.svg" alt="">
                 </a>
-                <a class="connection-btn unselectable noheight" href="" target="_blank">
+                <a style="cursor:pointer" class="connection-btn unselectable noheight" href="" target="_blank">
                     <img id="launch-conn" class="connection-img unselectable" src="assets/img/launch-connection.svg" alt="">
+                </a>
+
+                <div class="connection-btn unselectable" style="pointer-events: none;" target="_blank">
+                    <img id="conn-sep" class="connection-img unselectable" src="assets/img/connection-sep.svg" alt="">
+                </div>
+
+                <a style="cursor:pointer" class="connection-btn unselectable" href="https://ko-fi.com/lemonorange" target="_blank">
+                    <img id="kofi-conn" class="connection-img unselectable" src="assets/img/kofi-connection.svg" alt="">
                 </a>
             </section>
 
@@ -200,7 +209,7 @@
         
             <!-- ========= CONTACT FORMS ========= -->
 
-            <h1 id="contact-title" class="contact-elements disable-hidden">Contact</h1>
+            <h1 id="contact-title" class="contact-elements disable-hidden">Reach Out 🚀</h1>
 
             <form id="contact-form" class="contact-elements disable-hidden" style="width:83%; height:fit-content; display: flex; flex-direction: column;"  action="" method="post">
                 <label class="contact-label">Name:</label>
@@ -306,7 +315,7 @@
         </p>
 
         <p class="page1-p notransition no-mobile-view" style="width:100%; margin-top: 0.5rem;">
-            I am, however, <b>not</b> open to commision or jobs, so I won't make a website or an app for you... For now at least... 😸
+            I am, however, <b>not</b> open to commision or jobs, so I won't make a website or an app for you... For now at least... 🧡
         </p>
 
         <a class="trigger" id="trig-4" style="right:0; height: fit-content; bottom: 0;"></a>
