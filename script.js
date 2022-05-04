@@ -39,6 +39,7 @@ let options_language = {
         "hola!",
         "salut!",
         "hallo!",
+        "olá"
     ],
     smartBackspace: true,
     loop: true,
