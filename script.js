@@ -35,11 +35,11 @@ let options_language = {
         "hello!",
         "哈咯!",
         "안녕!",
-        "Привіт!",
+        "Tere!",
+        "Terve!",
         "hola!",
         "salut!",
         "hallo!",
-        "olá"
     ],
     smartBackspace: true,
     loop: true,
