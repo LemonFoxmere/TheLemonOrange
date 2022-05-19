@@ -97,12 +97,26 @@ a{
     }
 
     #copyright{
-        position: absolute;
+        position: fixed;
+        width: 100vw;
+        padding: 2pt 0 2pt 0 !important;
+        background: linear-gradient(90deg, #ededed89 0%, #f2f2f289 100%);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid #cdcdcd;
+        height: fit-content;
         text-align: center;
-        top:1rem;
+        bottom:0;
+        left:0;
         font-size: 1rem;
-        opacity: 0.5;
+        color: #aaa;
+        z-index: 9999;
     }
+    @-moz-document url-prefix() {
+        #copyright{
+            background: linear-gradient(90deg, #ededede4 0%, #f2f2f2e4 100%);
+        }  
+    }
+
 
     /* ========= contact mode ========= */
     
@@ -130,9 +144,6 @@ a{
     #type-text-container{
         width:fit-content; height:2.7rem; margin-bottom: 0.5rem;
         justify-content: center;
-    }
-    #copyright{
-        bottom:1rem; top: unset;
     }
     #copyright::after{content: ", All Rights Reserved";}
 

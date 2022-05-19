@@ -22,6 +22,7 @@ window.onscroll = e => {
         if(trig1_passed_prev == false && trig1_passed == true){ // prevent repeated execution
             document.getElementById("title-text").classList.add("opacity-none")
             document.getElementById("logo-bg").classList.add("app-bg-style")
+            document.getElementById("logo-bg-shadow").classList.add("app-bg-shadow-style")
             document.getElementById("page1").classList.remove("disable-hidden")
             // if on mobile, hide the connection buttons and show the project page before hand
             if(is_mobile()){
@@ -36,6 +37,7 @@ window.onscroll = e => {
         if(trig1_passed_prev == true && trig1_passed == false){ // prevent repeated execution
             document.getElementById("title-text").classList.remove("opacity-none")
             document.getElementById("logo-bg").classList.remove("app-bg-style")
+            document.getElementById("logo-bg-shadow").classList.remove("app-bg-shadow-style")
             document.querySelectorAll(".connection-btn").forEach(e => e.classList.remove("disable-hidden")) // for mobile
             document.getElementById("page1").classList.add("disable-hidden")
         }
@@ -45,7 +47,9 @@ window.onscroll = e => {
     passed_trigger("trig-2", "trig-epsilon", ()=>{ // trigger 2 which transitions the page to an interactive project page
         trig2_passed = true
         if(trig2_passed_prev == false && trig2_passed == true){ // prevent repeated execution
-            update_project_to(app_index, true)
+            if(app_index !== 0){
+                update_project_to(app_index, true)
+            }
 
             document.getElementById("logo-trans-right").classList.remove("disable-hidden")
             document.getElementById("logo-trans-left").classList.remove("disable-hidden")
@@ -62,7 +66,9 @@ window.onscroll = e => {
     }, () => {
         trig2_passed = false
         if(trig2_passed_prev == true && trig2_passed == false){ // prevent repeated execution
-            update_project_to(0)
+            if(app_index !== 0){
+                update_project_to(0)
+            }
         
             document.getElementById("logo-trans-right").classList.add("disable-hidden")
             document.getElementById("logo-trans-left").classList.add("disable-hidden")

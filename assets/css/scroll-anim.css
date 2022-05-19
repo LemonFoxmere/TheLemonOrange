@@ -25,32 +25,20 @@
 /* medium */
 @media screen and (min-width: 900px) {
     .app-bg-style{
-        transform: rotateY(-20deg) rotateX(10deg) scale(0.8) translateX(-25rem) !important;
-        -moz-transform: rotateY(-20deg) rotateX(10deg) scale(0.8) translateX(-25rem) !important;
-        -webkit-transform: rotateY(-20deg) rotateX(10deg) scale(0.8) translateX(-25rem) !important;
-
-        border-radius: 7rem !important;    
-        width:35rem !important;
-        height:35rem !important;
-
-        animation-play-state: running;
-        animation: 7s ease-in-out infinite alternate upanddown;
+        transform: rotateY(-20deg) rotateX(10deg) scale(0.8) translateX(-25rem) translateZ(1px) !important;
+        -moz-transform: rotateY(-20deg) rotateX(10deg) scale(0.8) translateX(-25rem) translateZ(1px) !important;
+        -webkit-transform: rotateY(-20deg) rotateX(10deg) scale(0.8) translateX(-25rem) translateZ(1px) !important;
 
         opacity:1;
         filter:none
-    }.app-bg-style:hover{
-        animation-play-state: paused;
     }
     .app-bg-shadow-style{
-        transform: translate(1rem, 2rem);
+        transform: scale(0.9) translateZ(-1px) !important;
+        opacity: 1 !important;
     }
 
     .app-bg-contact-style{
         transform: translateX(-16rem) scale(0.8) !important;
-
-        border-radius: 4rem !important;    
-        width:31rem !important;
-        height:31rem !important;
     }.app-bg-contact-shadow-style{
         transform: none;
     }
@@ -59,26 +47,21 @@
 /* large */
 @media screen and (min-width: 1300px) {
     .app-bg-style{
-        transform: rotateY(-20deg) rotateX(10deg) scale(0.9) translateX(-29rem) !important;
-        -moz-transform: rotateY(-20deg) rotateX(10deg) scale(0.9) translateX(-29rem) !important;
-        -webkit-transform: rotateY(-20deg) rotateX(10deg) scale(0.9) translateX(-29rem) !important;
+        transform: rotateY(-20deg) rotateX(10deg) scale(0.9) translateX(-29rem) translateZ(100px) !important;
+        -moz-transform: rotateY(-20deg) rotateX(10deg) scale(0.9) translateX(-29rem) translateZ(100px) !important;
+        -webkit-transform: rotateY(-20deg) rotateX(10deg) scale(0.9) translateX(-29rem) translateZ(100px) !important;
+    }
 
-        border-radius: 8rem !important;    
-        width:37rem !important;
-        height:37rem !important;
+    .app-bg-shadow-style{
+        transform: scale(1) translateZ(-1px) !important;
+        opacity: 1 !important;
     }
 
     .app-bg-contact-style{
         transform: translateX(-22rem) scale(0.8) !important;
 
         border-radius: 6rem !important;    
-        width:37rem !important;
-        height:37rem !important;
+        /* width:37rem !important;
+        height:37rem !important; */
     }
-}
-
-@keyframes upanddown {
-    0%   {margin-top:0}
-    50%  {margin-top:-50px}
-    100% {margin-top:0}
 }

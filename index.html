@@ -34,7 +34,7 @@
         <div id="logo-bg">
             <!-- shadows and box for icon 1 (main logo) -->
             <svg id="logo-container" class="logo-3d unselectable"
-            style="z-index: 1; position:absolute; transform: translateZ(1px) scale(0.9); shape-rendering: optimizeSpeed; image-rendering: optimizeSpeed;"
+            style="z-index: 1; position:absolute; transform: scale(0.9) translateZ(0.01px); shape-rendering: optimizeSpeed; image-rendering: optimizeSpeed;"
             viewBox="0 0 135.46666 135.46667"
             xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
             xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -160,29 +160,29 @@
             </svg>
             <!-- social media for icon 1 (main logo) -->
             <section id="social-container" class="3d-icon-1" style="position:absolute; display: flex; justify-content: center; z-index: 2; height:100%; align-items: center; bottom:0;
-                                            height:fit-content; transition: 200ms opacity ease-in-out">
-                <a style="cursor:pointer" class="connection-btn unselectable" href="https://twitter.com/LemonOrangeTW" target="_blank">
-                    <img id="twitter-conn" class="connection-img unselectable" src="assets/img/twitter-connection.svg" alt="">
+                                            height:fit-content;">
+                <a id="twitter-conn" style="cursor:pointer" class="connection-btn unselectable" href="https://twitter.com/LemonOrangeTW" target="_blank">
+                    <img class="connection-img unselectable" src="assets/img/twitter-connection.svg" alt="">
                 </a>
-                <a style="cursor:pointer" class="connection-btn unselectable" href="https://www.youtube.com/channel/UCut2xeBl7HcPEPatqpEUoQw" target="_blank">
-                    <img id="youtube-conn" class="connection-img unselectable" src="assets/img/youtube-connection.svg" alt="">
+                <a id="youtube-conn" style="cursor:pointer" class="connection-btn unselectable" href="https://www.youtube.com/channel/UCut2xeBl7HcPEPatqpEUoQw" target="_blank">
+                    <img class="connection-img unselectable" src="assets/img/youtube-connection.svg" alt="">
                 </a>
-                <a style="cursor:pointer" class="connection-btn unselectable" href="https://medium.com/@thelemonorange" target="_blank">
-                    <img id="medium-conn" class="connection-img unselectable" src="assets/img/medium-connection.svg" alt="">
+                <a id="medium-conn" style="cursor:pointer" class="connection-btn unselectable" href="https://medium.com/@thelemonorange" target="_blank">
+                    <img class="connection-img unselectable" src="assets/img/medium-connection.svg" alt="">
                 </a>
-                <a style="cursor:pointer" class="connection-btn unselectable" href="https://github.com/LemonOrangeWasTaken" target="_blank">
-                    <img id="github-conn" class="connection-img unselectable" src="assets/img/github-connection.svg" alt="">
+                <a id="github-conn" style="cursor:pointer" class="connection-btn unselectable" href="https://github.com/LemonOrangeWasTaken" target="_blank">
+                    <img class="connection-img unselectable" src="assets/img/github-connection.svg" alt="">
                 </a>
-                <a style="cursor:pointer" class="connection-btn unselectable noheight" href="" target="_blank">
-                    <img id="launch-conn" class="connection-img unselectable" src="assets/img/launch-connection.svg" alt="">
+                <a id="launch-conn" style="cursor:pointer; width:7rem" class="connection-btn unselectable noheight" href="" target="_blank">
+                    <img class="connection-img unselectable" src="assets/img/launch-connection.svg" alt="">
                 </a>
 
-                <div class="connection-btn unselectable" style="pointer-events: none;" target="_blank">
-                    <img id="conn-sep" class="connection-img unselectable" src="assets/img/connection-sep.svg" alt="">
+                <div id="conn-sep" class="connection-btn unselectable" style="pointer-events: none; width: 0;" target="_blank">
+                    <img class="connection-img unselectable" src="assets/img/connection-sep.svg" alt="">
                 </div>
 
-                <a style="cursor:pointer" class="connection-btn unselectable" href="https://ko-fi.com/lemonorange" target="_blank">
-                    <img id="kofi-conn" class="connection-img unselectable" src="assets/img/kofi-connection.svg" alt="">
+                <a id="kofi-conn" style="cursor:pointer" class="connection-btn unselectable" href="https://ko-fi.com/lemonorange" target="_blank">
+                    <img class="connection-img unselectable" src="assets/img/kofi-connection.svg" alt="">
                 </a>
             </section>
 
@@ -197,11 +197,11 @@
                 <div onclick="update_project_to(5, true)" class="carousel-indicator unselectable"></div>
             </section>
 
-            <img id="deepfusion-icon" src="assets/img/png/deepfusion.png" class="logo-3d logo-icon-hidden unselectable" style="transform: translateZ(1px)" alt="deepfusion">
-            <img id="aivis-icon" src="assets/img/png/aivis.png" class="logo-3d logo-icon-hidden unselectable" style="transform: translateZ(1px)" alt="aivis">
-            <img id="catmidi-icon" src="assets/img/png/catmidi.png" class="logo-3d logo-icon-hidden unselectable" style="transform: translateZ(1px)" alt="music2cat">
-            <img id="render3d-icon" src="assets/img/png/render3d.png" class="logo-3d logo-icon-hidden unselectable" style="transform: translateZ(1px)" alt="3d renderer">
-            <img id="aerodesiner-icon" src="assets/img/png/aerodesiner.png" class="logo-3d logo-icon-hidden unselectable" style="transform: translateZ(1px)" alt="3d renderer">
+            <img id="deepfusion-icon" src="assets/img/png/deepfusion.png" class="logo-3d logo-icon-hidden unselectable" style="transform: translateZ(5px)" alt="deepfusion">
+            <img id="aivis-icon" src="assets/img/png/aivis.png" class="logo-3d logo-icon-hidden unselectable" style="transform: translateZ(5px)" alt="aivis">
+            <img id="catmidi-icon" src="assets/img/png/catmidi.png" class="logo-3d logo-icon-hidden unselectable" style="transform: translateZ(5px)" alt="music2cat">
+            <img id="render3d-icon" src="assets/img/png/render3d.png" class="logo-3d logo-icon-hidden unselectable" style="transform: translateZ(5px)" alt="3d renderer">
+            <img id="aerodesiner-icon" src="assets/img/png/aerodesiner.png" class="logo-3d logo-icon-hidden unselectable" style="transform: translateZ(5px)" alt="3d renderer">
 
             <!-- left and right arrow -->
             <img id="logo-trans-left" class="logo-bg-arrows disable-hidden unselectable" src="assets/img/button-left.svg" style="position: absolute; z-index: 2; left:1.5rem; shape-rendering: geometricPrecision" alt="">
@@ -241,7 +241,7 @@
             </form>
         
             <div id="logo-bg-color" class="unselectable no-mobile-view"></div>
-            <img id="logo-bg-shadow" class="unselectable no-mobile-view" style="transform: translateZ(-1px)" src="assets/img/png/app_shadow.png"></img>  
+            <img id="logo-bg-shadow" class="unselectable no-mobile-view" src="assets/img/png/app_shadow.png"></img>  
         </div>
     </div>
 
@@ -289,15 +289,15 @@
     <section class="disable-hidden page-container" id="page2" style="transition: all 300ms cubic-bezier(0.295, 0.015, 0.040, 1.000); z-index: 2;
         position:relative; display:flex; flex-direction:column;">
         <section style="width:fit-content; height:fit-content">
-            <h1 id="project-title" class="page1-h1 notransition" style="color:#333; font-weight: 600;"></h1>
+            <h1 id="project-title" class="page1-h1 notransition" style="color:#333; font-weight: 600;">My Stuff 📦</h1>
         </section>
         <hr class="no-mobile-view" style="width:13rem; margin: 1.5rem 0 1rem 0; opacity: 0.4;">
         <section class="infos">
-            <p class="page1-p notransition no-mobile-view" id="project-description" style="width:100%"></p>
+            <p class="page1-p notransition no-mobile-view" id="project-description" style="width:100%">This app icon is interactive! You can browse through my featured projects on there if you like, and the description for each one will pop up here.</p>
     
             <hr class="no-mobile-view" style="width:7rem; margin: 1.5rem 0 1rem 0; opacity: 0.4;">
             
-            <p class="page1-p2 notransition" id="project-maintain" style="width:100%; color: grey;"></p>
+            <p class="page1-p2 notransition" id="project-maintain" style="width:100%; color: grey;">🎉 This website is actively maintained!</p>
         </section>
         <a class="trigger" id="trig-3" style="bottom:0%; right:0rem"></a>
     </section>
@@ -326,9 +326,10 @@
     <div id="end-screen" class="disable-hidden" style="width:100vw; height:100vh; display: flex; justify-content: center; align-items: center; position: fixed; top:0; left:0; margin:0; padding:0; transition: opacity 500ms cubic-bezier(0.075, 0.82, 0.165, 1)">
         <h1 id="end-screen-h1">Designed & Made by <span style="color:#f87800; text-shadow: 0 0 15px #ffffff;">Lemon</span><span style="color: #ffb700; text-shadow: 0 0 15px #ffffff;">Orange</span></h1>
         
-        <p id="copyright">Copyright &copy; 2022 LemonOrange</p>
     </div>
-
+    
+    <p id="copyright">Copyright &copy; 2022 LemonOrange</p>
+    
     <script defer data-domain="thelemonorange.com" src="https://plausible.io/js/plausible.js"></script>
     
     <script src="assets/minjs/anime.min.js"></script>

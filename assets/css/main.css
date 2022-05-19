@@ -14,6 +14,9 @@ body{
     scroll-behavior: smooth;
     overflow-x: hidden !important;
     overscroll-behavior-x: none;
+
+    background: #f2f2f2 !important;
+    background: linear-gradient(-100deg, #f2f2f2 0%, #eeeeee 100%) !important;
 }
 
 .notransition {
@@ -51,10 +54,10 @@ body{
     opacity: 0 !important;
     pointer-events: none !important;
 }
+
 .noheight{
-    height:0 !important;
-    margin-left:0 !important;
-    margin-right:0 !important;
+    width:0 !important; margin:0 !important;
+    opacity: 0 !important;
 }
 
 #logo-bg-container{
@@ -64,7 +67,7 @@ body{
     top:0; left:0;
     transform-style: flat;
 
-    background-color: transparent;
+    background: transparent;
 
     perspective: 75rem;
     -moz-perspective: 75rem;
@@ -83,6 +86,7 @@ body{
     z-index: 2;
     transition: all 700ms cubic-bezier(0.295, 0.015, 0.040, 1.000);
 
+    
     shape-rendering: optimizeSpeed;
     image-rendering: optimizeSpeed;
 }
@@ -92,13 +96,16 @@ body{
     width: 100%;
     height: 100%;
     border-radius: inherit;
-    background: linear-gradient(-100deg, #f2f2f2 0%, #eeeeee 100%);
+    
+    background: linear-gradient(-100deg, #f2f2f2 0%, #f0f0f0 100%);
 }
 #logo-bg-shadow{
     position:absolute;
     width:65rem; height:65rem;
 
-    opacity: 1;
+    transform: scale(0.7) translateZ(-5px);
+
+    opacity: 0;
 
     transform-style: preserve-3d;
     transition: all 700ms cubic-bezier(0.295, 0.015, 0.040, 1.000);
@@ -148,11 +155,6 @@ body{
 
 /* tiny */
 @media screen and (min-width: 0) {
-    body{
-        background: #f2f2f2 !important;
-        background: linear-gradient(-100deg, #f2f2f2 0%, #eeeeee 100%) !important;
-    }
-
     #logo-bg-shadow{display: none;}
     #logo-bg{height:100%}
     .logo-3d{
@@ -170,12 +172,10 @@ body{
     .connection-btn{
         cursor:pointer;
         margin: 0 0.5rem 8rem 0.5rem;
-        height:2.75rem;
+        width: 2.5rem;
         opacity: 0.35;
-        transition: all 300ms cubic-bezier(0.295, 0.015, 0.040, 1.000);
     }.connection-img{
-        height:100%;
-        transition: all 300ms cubic-bezier(0.295, 0.015, 0.040, 1.000);
+        height:2.5rem;
         image-rendering: optimizeQuality;
     }
     
@@ -306,6 +306,12 @@ body{
         top: 1.75rem !important;
     }
 
+    #logo-bg{
+        border-radius: 7rem !important;    
+        width:35rem !important;
+        height:35rem !important;
+    }
+
     /* page elements */
     .page-container{
         width:27rem; margin-left:27rem;
@@ -377,6 +383,12 @@ body{
     /* page elements */
     .page-container{
         width:38rem; margin-left:32rem;
+    }
+    
+    #logo-bg{
+        border-radius: 8rem !important;    
+        width:37rem !important;
+        height:37rem !important;
     }
 
     /* triggers */

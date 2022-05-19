@@ -20,15 +20,34 @@ let change_innerhtml = (id, new_val, no_transition) => {
     document.getElementById(id).innerHTML = new_val;
 }
 
-let update_medias = (target) => {
-    document.querySelectorAll(".connection-img").forEach(e => {
-        if(target[e.id] === undefined){
-            // e.classList.add("noheight")
-            e.parentElement.classList.add("noheight")
-        } else {
-            if(target[e.id] !== 1) e.parentElement.href = target[e.id]
-            // e.classList.remove("noheight")
-            e.parentElement.classList.remove("noheight")
+let update_medias = (target, direction) => {
+    const init_x_movement = direction===0 ? 0 : (direction === 1 ? "50px" : "-50px")
+    const return_x_movement = direction===0 ? 0 : (direction === 1 ? ["-75px", "0px"] : ["75px", "0px"])
+
+    anime({
+        targets:"#social-container",
+        duration:100,
+        opacity: [1,0],
+        translateX: init_x_movement,
+        easing: "linear",
+        complete: () => {
+            document.querySelectorAll(".connection-btn").forEach(e => {
+                if(target[e.id] === undefined){
+                    // e.classList.add("noheight")
+                    e.classList.add("noheight")
+                } else {
+                    if(target[e.id] !== 1) e.parentElement.href = target[e.id]
+                    // e.classList.remove("noheight")
+                    e.classList.remove("noheight")
+                }
+            })
+            anime({
+                targets:"#social-container",
+                duration:200,
+                easing: "easeOutCubic",
+                translateX: return_x_movement,
+                opacity: [0,1],
+            })
         }
     })
 }
@@ -110,8 +129,8 @@ let available_apps = [
 ]
 
 
-let update_project_to = (index, set=false)=> {
-    if(set && is_mobile()) {
+let update_project_to = (index, set=false, direction=0)=> {
+    if(set) {
         app_index = index
     }
 
@@ -120,7 +139,7 @@ let update_project_to = (index, set=false)=> {
     change_innerhtml("project-title", data.title, true)
     change_innerhtml("project-description", data.description, true)
     change_innerhtml("project-maintain", data.maintain, true)
-    update_medias(data.medias)
+    update_medias(data.medias, direction)
     update_logo(data.logo)
 
     // update carosel indicators
@@ -146,11 +165,11 @@ document.getElementById("logo-trans-right").onclick = e => {
     if(app_index > available_apps.length-1) app_index = 0
 
     // get the new project object
-    update_project_to(app_index, true)
+    update_project_to(app_index, true, -1)
 }
 document.getElementById("logo-trans-left").onclick = e => {
     app_index -= 1
     if(app_index < 0) app_index = available_apps.length - 1
 
-    update_project_to(app_index, true)
+    update_project_to(app_index, true, 1)
 }
