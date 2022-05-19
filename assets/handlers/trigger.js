@@ -48,7 +48,7 @@ window.onscroll = e => {
         trig2_passed = true
         if(trig2_passed_prev == false && trig2_passed == true){ // prevent repeated execution
             if(app_index !== 0){
-                update_project_to(app_index, true)
+                update_project_to(app_index, true, 0, true)
             }
 
             document.getElementById("logo-trans-right").classList.remove("disable-hidden")

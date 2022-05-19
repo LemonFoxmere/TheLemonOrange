@@ -5,7 +5,7 @@ let change_innerhtml = (id, new_val, no_transition) => {
             opacity: 0,
             duration:150,
             easing: "linear",
-            complete: ani => {
+            complete: () => {
                 document.getElementById(id).innerHTML = new_val;
                 anime({
                     targets:`#${id}`,
@@ -33,11 +33,9 @@ let update_medias = (target, direction) => {
         complete: () => {
             document.querySelectorAll(".connection-btn").forEach(e => {
                 if(target[e.id] === undefined){
-                    // e.classList.add("noheight")
                     e.classList.add("noheight")
                 } else {
-                    if(target[e.id] !== 1) e.parentElement.href = target[e.id]
-                    // e.classList.remove("noheight")
+                    if(target[e.id] !== 1) e.href = target[e.id]
                     e.classList.remove("noheight")
                 }
             })
@@ -139,16 +137,16 @@ let available_apps = [
 ]
 
 
-let update_project_to = (index, set=false, direction=0)=> {
+let update_project_to = (index, set=false, direction=0, noanim=false)=> {
     if(set) {
         app_index = index
     }
 
     let data = available_apps[index]
 
-    change_innerhtml("project-title", data.title, true)
-    change_innerhtml("project-description", data.description, true)
-    change_innerhtml("project-maintain", data.maintain, true)
+    change_innerhtml("project-title", data.title, noanim)
+    change_innerhtml("project-description", data.description, noanim)
+    change_innerhtml("project-maintain", data.maintain, noanim)
     update_medias(data.medias, direction)
     update_logo(data.logo)
 
