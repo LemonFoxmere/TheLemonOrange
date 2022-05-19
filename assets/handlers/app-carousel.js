@@ -89,6 +89,16 @@ let available_apps = [
         logo:"deepfusion-icon",
         maintain:"🎉 This app is actively maintained!"
     },
+    { // bycloud
+        title:"bycloud.AI",
+        description:"One of my commision sites. Feel free to check it out (btw you should subscribe to bycloud, he's a cool dude).",
+        medias:{"youtube-conn":"https://www.youtube.com/c/bycloudAI",
+                "launch-conn":"https://bycloud.ai",
+                "conn-sep":"",
+                "kofi-conn":"https://ko-fi.com/lemonorange",},
+        logo:"cloud-icon",
+        maintain:"🎉 This website is actively maintained!"
+    },
     { // Cat Midi
         title:"Cat & Midi",
         description:"A glorified ML MIDI transcriber that I made to make cats sing songs I like. It was trained with <i>only</i> procedurally generated data, and it somehow works pleasantly well with real world music.",
